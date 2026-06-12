@@ -1,0 +1,42 @@
+# Blender files
+*.blend
+*.blend1
+*.blend2
+*.tmp
+state/
+
+# Rendered output
+renders/
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.hdr
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local config
+.env
+*.config.local
+
+*.obj
+*.mtl
