@@ -1,0 +1,550 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\aerial\\REAL_aerial_jamarat-bridge.jpg",
+  "question": "FOTO AERIAL NYATA JAMARAT. Tolong tandai (pin + komentar / box / pen) di foto ini: (1) Lingkari ke-4 TENDA dan beri nomor 1-4. (2) Tandai tiap RAMP/FLYOVER lengkung -> menuju LANTAI berapa (L1 Ground / L2 / L3 / L4 / L5 atap) dan ARAH-nya (masuk dari arah mana / keluar ke mana, one-way). (3) Tandai GEDUNG LIFT/eskalator (menara silinder) - ada berapa & di mana. (4) Bedakan JALAN KENDARAAN (bus/mobil) vs JALAN PEJALAN KAKI. (5) Kalau bisa, beri tahu ADA BERAPA LANTAI dek yang terlihat. (6) Tandai 3 tugu jamrah (Ula/Wustha/Aqabah) jika kelihatan. Boleh juga upload foto/denah tambahan. Setelah itu klik 'Save & Finish'.",
+  "answer": "Tambahkkan gambar untuka ku anotasi jika penjelasan kurang jelas dan ada yang ingin kamu konfirmasikan,",
+  "pins": [
+    {
+      "n": 1,
+      "x": 537,
+      "y": 327,
+      "comment": "Jamarat al-Aqaba (al-Qubra / Big Jamarat) Posisi: Paling barat/kiri dalam kompleks, ujung pertama yang dicapai jemaah dari arah Muzdalifah. Fungsi Ritual:  Tiang jamrah terbesar dan paling utama secara ritual Dilempar pada Hari Nahr (10 Dzulhijjah) — ini adalah lemparan pertama dan wajib setelah jemaah tiba dari Muzdalifah Dilempar kembali pada hari tasyriq ke-2 dan ke-3 (bersama dua tiang lainnya) Secara simbolis merepresentasikan godaan iblis terbesar yang dilawan Nabi Ibrahim  Karakteristik Arsitektur Kanopi:  Ukuran kanopi terbesar dari keempat kanopi karena volume jemaah di titik ini paling tinggi Tiang mast pusat tunggal dengan kabel baja radial menjulur ke cincin oval di tepi membran Membran PTFE (Teflon-coated fiberglass) berwarna putih Pebble basin (kolam penampung kerikil) di bawahnya berukuran paling lebar  Tips AGENTS.md: jamrah_id: \"aqaba\", scale kanopi sedikit lebih besar dari no. 3 dan 4."
+    },
+    {
+      "n": 2,
+      "x": 587,
+      "y": 266,
+      "comment": "Area Kosong / Plaza Transisi Posisi: Di antara Kanopi No. 1 (Aqaba) dan Kanopi No. 3 (Wusta), agak menjorok ke sisi berbeda. Fungsi:  Bukan menaungi tiang jamrah — ini adalah ruang perantara/penghubung Berfungsi sebagai plaza sirkulasi tempat jemaah mengatur ulang posisi sebelum bergerak ke tiang berikutnya Kemungkinan juga berfungsi sebagai buffer zone untuk mencegah penumpukan massa antara Aqaba dan Wusta Bisa jadi area tempat petugas/askar berjaga untuk mengatur arus jemaah  Karakteristik Arsitektur:  Kanopi lebih kecil atau setara, tanpa pebble basin di bawahnya Area di bawahnya relatif lebih terbuka/lapang dibanding kanopi lain Struktur tetap sama: mast + kabel radial + membran PTFE  Tips AGENTS.md: jamrah_id: \"transition_ab\", tidak perlu render pebble basin di bawahnya, cukup lantai plaza terbuka."
+    },
+    {
+      "n": 3,
+      "x": 643,
+      "y": 212,
+      "comment": "Jamarat al-Wusta (Middle Jamarat) Posisi: Di tengah kompleks, antara Aqaba (barat) dan Ula (timur). Fungsi Ritual:  Tiang jamrah tengah Dilempar pada hari tasyriq ke-2 (11 Dzulhijjah) dan ke-3 (12 Dzulhijjah), urutan lemparan: Ula → Wusta → Aqaba Secara simbolis merepresentasikan godaan iblis tingkat menengah  Karakteristik Arsitektur Kanopi:  Ukuran kanopi sedang, setara dengan Kanopi No. 4 Struktur mast + kabel radial + membran PTFE identik dengan yang lain Pebble basin di bawahnya berukuran standar Dari foto referensi, kanopi ini terlihat sedikit lebih tinggi kubahnya dibanding No. 4 (Ula)  Tips AGENTS.md: jamrah_id: \"wusta\", pastikan pebble basin ter-render di lantai dek bawah kanopi."
+    },
+    {
+      "n": 4,
+      "x": 753,
+      "y": 152,
+      "comment": "Jamarat al-Ula (Small Jamarat / Jamarat al-Sughra) Posisi: Paling timur/kanan dalam kompleks, ujung terjauh dari arah kedatangan Muzdalifah. Fungsi Ritual:  Tiang jamrah pertama dalam urutan lemparan harian (hari tasyriq) Dilempar pertama kali setiap hari tasyriq sebelum Wusta dan Aqaba Secara simbolis merepresentasikan godaan iblis pertama/terkecil yang dilawan Nabi Ibrahim Jemaah yang hanya melakukan nafar awal (pulang di hari tasyriq ke-2) tetap wajib melempar tiang ini  Karakteristik Arsitektur Kanopi:  Ukuran kanopi paling kecil dari tiga kanopi yang menaungi tiang jamrah Struktur tetap sama: mast + kabel radial + membran PTFE Pebble basin di bawahnya berukuran standar Dari foto referensi, posisinya sedikit lebih terisolasi di ujung timur, dengan akses ramp lebih sedikit dari sisi ini  Tips AGENTS.md: jamrah_id: \"ula\", ini titik start urutan lemparan — pertimbangkan spawn point NPC jemaah dimulai dari sini lalu bergerak barat menuju Wusta → Aqaba."
+    },
+    {
+      "n": 5,
+      "x": 924,
+      "y": 190,
+      "comment": "masuk ke dalam kategori Ramp Heliks (Helix Ramp) / Ramp Keluar Melengkung.  Berikut rincian spesifiknya untuk referensi pemodelan game Anda:  Nama Struktur: Ramp Keluar Pejalan Kaki (Curved Pedestrian Exit Ramp).  Arah Kedatangan & Tujuan: Panah pink itu menunjukkan arus keluar (outbound). Jalur ini digunakan oleh jemaah yang sudah selesai melakukan lempar jumrah dan sedang bergerak menjauh dari area inti (pusat bangunan Jamarat) untuk kembali ke perkemahan atau berjalan terus menuju arah Makkah/Masjidil Haram.  Koneksi Lantai: Ramp ini dirancang untuk \"menguras\" massa dari dek atas (biasanya terhubung dari Lantai 2 atau Lantai 3 bangunan utama). Ramp ini membawa mereka turun memutar melewati jalanan darat di bawahnya, dan pada akhirnya mendarat dengan aman di level tanah (ground floor) atau menyambung ke jalur pedestrian tingkat menengah.  Fungsi Utama & Alasan Bentuknya: Kenapa bentuknya harus melengkung memutar sejauh itu? Jawabannya adalah gradien kemiringan. Elevasi setiap lantai Jamarat itu setinggi 12 meter. Untuk menurunkan jutaan orang (termasuk yang lanjut usia atau menggunakan kursi roda) dari ketinggian tersebut dengan aman, kemiringan jalan harus sangat landai. Membentangkan jalan lurus akan memakan jarak yang sangat jauh, sehingga arsiteknya melengkungkannya (helix) agar landai namun tetap efisien memakan tempat ruang udara."
+    },
+    {
+      "n": 6,
+      "x": 610,
+      "y": 166,
+      "comment": "dalah Jembatan/Ramp Layang Keluar (Elevated Exit Bridge/Ramp) tingkat tinggi.  Menjawab pertanyaanmu: Betul sekali, jalur itu menyambung langsung ke bangunan utama. Berikut adalah rincian fungsional dan arsitekturalnya untuk referensi game RUH:  Koneksi Bangunan: Pangkal jalan ini menempel dan menyambung langsung ke dek atas kompleks Jamarat (kemungkinan besar Lantai 2 atau Lantai 3). Alih-alih turun menggunakan eskalator, jemaah di lantai atas bisa langsung berjalan keluar sejajar lewat jalan layang ini.  Arah & Fungsi (Arus Biru): Panah biru menunjukkan arus keluar (outbound). Jalur ini didesain khusus agar jutaan jemaah yang sudah selesai melempar jumrah di lantai atas bisa langsung dievakuasi menjauh dari kompleks tanpa harus menyilang atau bertabrakan dengan arus jemaah yang baru datang (seperti jalur panah oranye no. 23 di bawahnya).  Tujuan Akhir: Jembatan raksasa ini membentang sangat panjang melayang di atas perkemahan Mina. Fungsinya membawa pejalan kaki menyeberang menuju terowongan pejalan kaki (menuju arah Makkah/Aziziyah) atau perlahan-lahan melandai turun ke level tanah di area perkemahan yang sangat jauh."
+    },
+    {
+      "n": 7,
+      "x": 415,
+      "y": 115,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 8,
+      "x": 461,
+      "y": 81,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 9,
+      "x": 687,
+      "y": 92,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 10,
+      "x": 944,
+      "y": 130,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 11,
+      "x": 304,
+      "y": 334,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 12,
+      "x": 158,
+      "y": 332,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 13,
+      "x": 38,
+      "y": 396,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 14,
+      "x": 336,
+      "y": 482,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 15,
+      "x": 408,
+      "y": 413,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 16,
+      "x": 561,
+      "y": 515,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 17,
+      "x": 597,
+      "y": 447,
+      "comment": "Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk."
+    },
+    {
+      "n": 18,
+      "x": 467,
+      "y": 252,
+      "comment": "Menara Ventilasi & Observasi (Ventilation & Observation Tower), dan dalam dokumen desainmu sebelumnya (AGENTS.md) ini kemungkinan besar yang dirujuk sebagai \"Menara Flare/Helipad\".  Berbeda dengan menara eskalator yang besar dan oval tadi, menara ini punya karakteristik dan fungsi khusus:  Fungsi Ventilasi (Shaft): Fungsi utama badan silindernya yang tinggi adalah sebagai cerobong raksasa. Menara ini menyedot dan membuang udara panas serta asap kendaraan/knalpot dari terowongan bawah tanah dan lantai dasar (Ground Floor) kompleks Jamarat agar sirkulasi udara tetap aman bagi jutaan jemaah.  Ruang Observasi (Bagian \"Flare\"): Perhatikan bagian atasnya yang mekar atau melebar (flared) tepat di bawah atap. Area ini digunakan sebagai ruang kontrol keamanan dan CCTV gantung untuk memantau kepadatan massa (crowd control) dari titik tertinggi.  Helipad Darurat (Atap): Piringan datar di paling atas juga berfungsi sebagai helipad tambahan berukuran lebih kecil, khusus untuk pendaratan taktis aparat keamanan atau medis darurat."
+    },
+    {
+      "n": 19,
+      "x": 865,
+      "y": 128,
+      "comment": "Menara Ventilasi & Observasi (Ventilation & Observation Tower), dan dalam dokumen desainmu sebelumnya (AGENTS.md) ini kemungkinan besar yang dirujuk sebagai \"Menara Flare/Helipad\".  Berbeda dengan menara eskalator yang besar dan oval tadi, menara ini punya karakteristik dan fungsi khusus:  Fungsi Ventilasi (Shaft): Fungsi utama badan silindernya yang tinggi adalah sebagai cerobong raksasa. Menara ini menyedot dan membuang udara panas serta asap kendaraan/knalpot dari terowongan bawah tanah dan lantai dasar (Ground Floor) kompleks Jamarat agar sirkulasi udara tetap aman bagi jutaan jemaah.  Ruang Observasi (Bagian \"Flare\"): Perhatikan bagian atasnya yang mekar atau melebar (flared) tepat di bawah atap. Area ini digunakan sebagai ruang kontrol keamanan dan CCTV gantung untuk memantau kepadatan massa (crowd control) dari titik tertinggi.  Helipad Darurat (Atap): Piringan datar di paling atas juga berfungsi sebagai helipad tambahan berukuran lebih kecil, khusus untuk pendaratan taktis aparat keamanan atau medis darurat."
+    },
+    {
+      "n": 20,
+      "x": 448,
+      "y": 363,
+      "comment": "enara Servis & Lift (Service & Elevator Tower) atau Shaft Tangga Darurat.  Berbeda dengan menara eskalator raksasa yang kita bahas pertama, menara ini punya skala dan fungsi yang lebih spesifik dalam kompleks Jamarat:  Akses Vertikal Khusus: Menara ini berisi lift (elevator) dan tangga konvensional yang utamanya ditujukan untuk petugas, tim medis darurat, perawatan fasilitas, atau akses khusus jemaah difabel/lansia. Ini bukan jalur sirkulasi massa utama.  Jalur Utilitas Utama: Selain akses manusia, struktur vertikal seperti ini biasanya menjadi \"tulang punggung\" (shaft) untuk jalur perpipaan air, pembuangan, dan kabel listrik yang menyuplai kelima lantai dek Jamarat.  Karakteristik Visual (Untuk Model 3D): * Badan: Bentuknya setengah silinder (atau silinder penuh yang sebagian tubuhnya tertanam ke struktur lantai utama).  Fasad: Ciri khas utamanya adalah jendela-jendela kecil berbentuk kotak yang berderet rapi secara vertikal mengikuti posisi bordes tangga atau lantai lift.  Atap: Bagian puncaknya biasanya ditutup dengan struktur khusus (ruang mesin lift) yang bentuknya sedikit melengkung atau menyudut."
+    },
+    {
+      "n": 21,
+      "x": 694,
+      "y": 379,
+      "comment": "enara Servis & Lift (Service & Elevator Tower) atau Shaft Tangga Darurat.  Berbeda dengan menara eskalator raksasa yang kita bahas pertama, menara ini punya skala dan fungsi yang lebih spesifik dalam kompleks Jamarat:  Akses Vertikal Khusus: Menara ini berisi lift (elevator) dan tangga konvensional yang utamanya ditujukan untuk petugas, tim medis darurat, perawatan fasilitas, atau akses khusus jemaah difabel/lansia. Ini bukan jalur sirkulasi massa utama.  Jalur Utilitas Utama: Selain akses manusia, struktur vertikal seperti ini biasanya menjadi \"tulang punggung\" (shaft) untuk jalur perpipaan air, pembuangan, dan kabel listrik yang menyuplai kelima lantai dek Jamarat.  Karakteristik Visual (Untuk Model 3D): * Badan: Bentuknya setengah silinder (atau silinder penuh yang sebagian tubuhnya tertanam ke struktur lantai utama).  Fasad: Ciri khas utamanya adalah jendela-jendela kecil berbentuk kotak yang berderet rapi secara vertikal mengikuti posisi bordes tangga atau lantai lift.  Atap: Bagian puncaknya biasanya ditutup dengan struktur khusus (ruang mesin lift) yang bentuknya sedikit melengkung atau menyudut."
+    },
+    {
+      "n": 22,
+      "x": 793,
+      "y": 243,
+      "comment": "enara Servis & Lift (Service & Elevator Tower) atau Shaft Tangga Darurat.  Berbeda dengan menara eskalator raksasa yang kita bahas pertama, menara ini punya skala dan fungsi yang lebih spesifik dalam kompleks Jamarat:  Akses Vertikal Khusus: Menara ini berisi lift (elevator) dan tangga konvensional yang utamanya ditujukan untuk petugas, tim medis darurat, perawatan fasilitas, atau akses khusus jemaah difabel/lansia. Ini bukan jalur sirkulasi massa utama.  Jalur Utilitas Utama: Selain akses manusia, struktur vertikal seperti ini biasanya menjadi \"tulang punggung\" (shaft) untuk jalur perpipaan air, pembuangan, dan kabel listrik yang menyuplai kelima lantai dek Jamarat.  Karakteristik Visual (Untuk Model 3D): * Badan: Bentuknya setengah silinder (atau silinder penuh yang sebagian tubuhnya tertanam ke struktur lantai utama).  Fasad: Ciri khas utamanya adalah jendela-jendela kecil berbentuk kotak yang berderet rapi secara vertikal mengikuti posisi bordes tangga atau lantai lift.  Atap: Bagian puncaknya biasanya ditutup dengan struktur khusus (ruang mesin lift) yang bentuknya sedikit melengkung atau menyudut."
+    },
+    {
+      "n": 23,
+      "x": 316,
+      "y": 772,
+      "comment": "Nama Bangunan: Ini adalah Ramp Akses Pejalan Kaki Utama (Main Pedestrian Access Ramp). Dalam draf dokumen Anda sebelumnya, struktur sirkulasi lurus yang melebar seperti ini kemungkinan besar masuk dalam kategori Ramp Kipas (Fan Ramp).  Arah Kedatangan: Panah oranye itu menunjukkan arus masuk (inbound) dari arah Timur. Jemaah yang melewati jalur ini datang dari arah Muzdalifah dan area perkemahan Mina (khususnya zona Mina yang lebih jauh/Mina Jadid).  Koneksi Lantai: Melihat elevasi pilar penyangga beton di bawahnya dan gerbang masuknya, ramp ini menanjak dan menyambung langsung ke Lantai 1 (First Floor) kompleks Jamarat—yaitu satu dek di atas lantai dasar (Ground Floor).  Fungsi Utama: Jalan ini berfungsi sebagai distributor massa atau \"corong\" raksasa. Alih-alih membiarkan jutaan jemaah menumpuk di lantai dasar, ramp ini \"menyendok\" arus pejalan kaki dari jalanan Mina dan mengangkat mereka langsung ke Lantai 1 dengan kemiringan yang sangat landai agar jemaah (termasuk yang memakai kursi roda) tidak cepat lelah sebelum tiba di dinding lempar jumrah."
+    },
+    {
+      "n": 24,
+      "x": 117,
+      "y": 369,
+      "comment": "Jalan sejajar dengan lantai puncak, bisa naik lewat menara 13 , 12, 11 juga"
+    },
+    {
+      "n": 25,
+      "x": 524,
+      "y": 118,
+      "comment": "sama dengan jalan 24, sejajar dengan lantai puncak"
+    }
+  ],
+  "shapes": [
+    {
+      "type": "box",
+      "color": "#7642f0",
+      "x0": 878,
+      "y0": 279,
+      "x1": 878,
+      "y1": 279
+    },
+    {
+      "type": "box",
+      "color": "#7642f0",
+      "x0": 501,
+      "y0": 297,
+      "x1": 647,
+      "y1": 373
+    },
+    {
+      "type": "box",
+      "color": "#7642f0",
+      "x0": 553,
+      "y0": 233,
+      "x1": 659,
+      "y1": 303
+    },
+    {
+      "type": "box",
+      "color": "#7642f0",
+      "x0": 605,
+      "y0": 182,
+      "x1": 728,
+      "y1": 255
+    },
+    {
+      "type": "box",
+      "color": "#7642f0",
+      "x0": 695,
+      "y0": 125,
+      "x1": 836,
+      "y1": 185
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 556,
+      "y0": 418,
+      "x1": 635,
+      "y1": 476
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 510,
+      "y0": 477,
+      "x1": 599,
+      "y1": 534
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 286,
+      "y0": 462,
+      "x1": 400,
+      "y1": 513
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 337,
+      "y0": 404,
+      "x1": 447,
+      "y1": 458
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 4,
+      "y0": 362,
+      "x1": 97,
+      "y1": 416
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 125,
+      "y0": 304,
+      "x1": 209,
+      "y1": 357
+    },
+    {
+      "type": "box",
+      "color": "#c142f0",
+      "x0": 270,
+      "y0": 325,
+      "x1": 340,
+      "y1": 368
+    },
+    {
+      "type": "box",
+      "color": "#f0427f",
+      "x0": 452,
+      "y0": 216,
+      "x1": 520,
+      "y1": 280
+    },
+    {
+      "type": "box",
+      "color": "#f0427f",
+      "x0": 859,
+      "y0": 102,
+      "x1": 924,
+      "y1": 146
+    },
+    {
+      "type": "arrow",
+      "color": "#f0427f",
+      "x0": 920,
+      "y0": 190,
+      "x1": 1008,
+      "y1": 245
+    },
+    {
+      "type": "arrow",
+      "color": "#f0427f",
+      "x0": 999,
+      "y0": 254,
+      "x1": 811,
+      "y1": 380
+    },
+    {
+      "type": "arrow",
+      "color": "#f0427f",
+      "x0": 766,
+      "y0": 467,
+      "x1": 731,
+      "y1": 577
+    },
+    {
+      "type": "arrow",
+      "color": "#f0427f",
+      "x0": 692,
+      "y0": 640,
+      "x1": 596,
+      "y1": 857
+    },
+    {
+      "type": "arrow",
+      "color": "#4542f0",
+      "x0": 663,
+      "y0": 170,
+      "x1": 474,
+      "y1": 194
+    },
+    {
+      "type": "arrow",
+      "color": "#4542f0",
+      "x0": 452,
+      "y0": 201,
+      "x1": 414,
+      "y1": 251
+    },
+    {
+      "type": "arrow",
+      "color": "#4542f0",
+      "x0": 413,
+      "y0": 278,
+      "x1": 411,
+      "y1": 367
+    },
+    {
+      "type": "arrow",
+      "color": "#4542f0",
+      "x0": 290,
+      "y0": 483,
+      "x1": 13,
+      "y1": 785
+    },
+    {
+      "type": "box",
+      "color": "#c043ef",
+      "x0": 393,
+      "y0": 104,
+      "x1": 453,
+      "y1": 136
+    },
+    {
+      "type": "box",
+      "color": "#c043ef",
+      "x0": 441,
+      "y0": 74,
+      "x1": 501,
+      "y1": 103
+    },
+    {
+      "type": "box",
+      "color": "#c043ef",
+      "x0": 658,
+      "y0": 86,
+      "x1": 726,
+      "y1": 121
+    },
+    {
+      "type": "box",
+      "color": "#c043ef",
+      "x0": 955,
+      "y0": 118,
+      "x1": 904,
+      "y1": 149
+    },
+    {
+      "type": "box",
+      "color": "#e4f042",
+      "x0": 420,
+      "y0": 339,
+      "x1": 467,
+      "y1": 380
+    },
+    {
+      "type": "box",
+      "color": "#e4f042",
+      "x0": 673,
+      "y0": 353,
+      "x1": 718,
+      "y1": 390
+    },
+    {
+      "type": "arrow",
+      "color": "#f08842",
+      "x0": 281,
+      "y0": 816,
+      "x1": 420,
+      "y1": 600
+    },
+    {
+      "type": "box",
+      "color": "#e4f042",
+      "x0": 769,
+      "y0": 192,
+      "x1": 809,
+      "y1": 292
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 138,
+      "y0": 367,
+      "x1": 338,
+      "y1": 389
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 357,
+      "y0": 390,
+      "x1": 563,
+      "y1": 399
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 606,
+      "y0": 401,
+      "x1": 794,
+      "y1": 424
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 826,
+      "y0": 443,
+      "x1": 840,
+      "y1": 511
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 823,
+      "y0": 534,
+      "x1": 764,
+      "y1": 660
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 742,
+      "y0": 681,
+      "x1": 665,
+      "y1": 806
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 664,
+      "y0": 818,
+      "x1": 684,
+      "y1": 838
+    },
+    {
+      "type": "arrow",
+      "color": "#ff00ae",
+      "x0": 708,
+      "y0": 836,
+      "x1": 880,
+      "y1": 862
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 529,
+      "y0": 124,
+      "x1": 529,
+      "y1": 124
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 441,
+      "y0": 108,
+      "x1": 587,
+      "y1": 118
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 613,
+      "y0": 123,
+      "x1": 736,
+      "y1": 132
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 787,
+      "y0": 131,
+      "x1": 846,
+      "y1": 137
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 970,
+      "y0": 160,
+      "x1": 1069,
+      "y1": 184
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 1060,
+      "y0": 201,
+      "x1": 1071,
+      "y1": 304
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 1053,
+      "y0": 360,
+      "x1": 968,
+      "y1": 444
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 937,
+      "y0": 473,
+      "x1": 1021,
+      "y1": 490
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 1051,
+      "y0": 316,
+      "x1": 1051,
+      "y1": 356
+    },
+    {
+      "type": "arrow",
+      "color": "#00fbff",
+      "x0": 1060,
+      "y0": 482,
+      "x1": 1094,
+      "y1": 447
+    }
+  ],
+  "uploaded_references": [],
+  "image_size": [
+    1300,
+    864
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\REAL_aerial_jamarat-bridge__annotated.png",
+  "timestamp": "2026-06-14T06:46:50"
+}

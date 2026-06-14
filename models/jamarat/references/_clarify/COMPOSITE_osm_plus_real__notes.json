@@ -1,0 +1,14 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\COMPOSITE_osm_plus_real.png",
+  "question": "DUA GAMBAR: KIRI = peta OSM denah (tampak atas, skala meter), KANAN = foto nyata sebagai acuan. Tolong DROP PIN MENARA di sisi KIRI (peta OSM) sambil lihat foto KANAN: tandai tiap menara + tulis tipe (A=eskalator/helipad, B=ventilasi/observasi, C=servis/lift). Cukup perkiraan lokasi di denah. PLUS: way timur 431617753 (oranye, loop besar timur di peta kiri) -> masuk lantai berapa & arah? (tulis teks). Lalu Save & Finish.",
+  "answer": "pakai file ini saja D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\aerial\\osm\\rough_trace_overlay.png\n\njadi ada 3 buah gambar\n",
+  "pins": [],
+  "shapes": [],
+  "uploaded_references": [],
+  "image_size": [
+    1549,
+    892
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\COMPOSITE_osm_plus_real__annotated.png",
+  "timestamp": "2026-06-14T14:50:40"
+}

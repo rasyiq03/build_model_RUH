@@ -1,0 +1,14 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\DRAFT_trace_plan.png",
+  "question": "Ini PLOT DENAH (tampak atas) trace draft Jamarat. Dek hitam = 950x80 m; kotak MERAH = 3 jamrah (Aqabah/Wusta/Ula); oval putus-putus = 4 kanopi (ungu=plaza transisi); bulatan bernomor = 16 menara (A=biru eskalator/helipad, B=hijau ventilasi, C=magenta lift). KOREKSI: (1) MENARA: posisi saya kemungkinan terlalu jauh (X +-150..200 m) dari dek yang cuma 80 m lebar. Tandai/pin lokasi menara yang BENAR relatif ke dek (mis. di tepi/ujung dek), tulis nomor+tipe (1A,2A,...,B,C). Kalau jumlah/tipe salah, koreksi. (2) DEK: kalau lebar/bentuk dek nyata berbeda (mis. lebih lebar dari 80 m, atau tidak lurus), tandai/garisi bentuk yang benar. (3) WAY TIMUR 431617753: masuk ke LANTAI berapa & arah? (tulis teks, mis. '753 = masuk L1 dari timur'). (4) Jamrah & kanopi: posisi/ukuran sudah benar? Boleh upload denah tambahan. Save & Finish.",
+  "answer": "gunakan gambar real, saja buka, aku sempat menganotasikan secara lengkap sebelumnya, kalu mau lebih jelas gunakan gambar osm saja nanti aku yang menggambar lokasinya, ",
+  "pins": [],
+  "shapes": [],
+  "uploaded_references": [],
+  "image_size": [
+    726,
+    1044
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\DRAFT_trace_plan__annotated.png",
+  "timestamp": "2026-06-14T14:27:01"
+}
