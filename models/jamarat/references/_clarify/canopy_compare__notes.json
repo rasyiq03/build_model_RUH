@@ -1,0 +1,17 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\canopy_compare.png",
+  "question": "ATAS = aerial ASLI, BAWAH = model saat ini (tampak atas, kanopi kuning). Di gambar ASLI: tandai/gambar bentuk & cakupan kanopi yang benar (outline tiap kanopi, jumlahnya, jeda antar kanopi, seberapa menutupi atap). Di gambar MODEL: tandai apa yang salah / harus diubah. Boleh pakai pin + komentar.",
+  "answer": "ganti dengan gambar terlampir, oh ya untuk yang hasil render blender, tambahkan juga keterangan namanya, mana jumrah aqobah dll",
+  "pins": [],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [
+    "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\uploaded_Screenshot 2026-06-15 233847.png"
+  ],
+  "image_size": [
+    1500,
+    1754
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\canopy_compare__annotated.png",
+  "timestamp": "2026-06-15T23:39:58"
+}

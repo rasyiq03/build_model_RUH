@@ -1,0 +1,15 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\canopy_top_current.png",
+  "question": "Render TAMPAK-ATAS model saat ini (kanopi=kuning, deck=abu-abu). Tolong gambar bentuk/cakupan KANOPI yang BENAR: outline tiap kanopi seharusnya seperti apa (mengikuti bentuk bangunan), berapa jumlahnya, di mana batas/jeda antar kanopi, dan sampai mana menutupi deck. Beri pin/komentar kalau perlu.",
+  "answer": "kita buat naotasi di dua gambar sekaligus, dengan gambar yang asli juga ",
+  "pins": [],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    1500,
+    650
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\canopy_top_current__annotated.png",
+  "timestamp": "2026-06-15T23:14:55"
+}

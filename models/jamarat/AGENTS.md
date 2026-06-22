@@ -119,7 +119,7 @@ HINT only (§R authority order). Full prior analysis: `references/_legacy/PHASE_
 | Jamrah walls ×3 | Tall **elliptical stone wall/blade**, long axis across spine, sloped top, in an oval pebble basin; rises through an oculus in each deck. Order along spine **W→E: Aqaba/Kubra (W, biggest) → Wusta (mid) → Ula/Sughra (E, smallest)** (corrects legacy S→N). Daily throw order Ula→Wusta→Aqaba; day-10 = Aqaba only (`interior/perspective06.jpg`, `interior/penampakan…webp`, `detail/signs02_uv.jpg`, `aerial/REAL_ELEMENT_MAP.md`) | ellipse cross-section lofted up with taper; granite |
 | Basins | Oval catchment pit + low padded rim wall per jamrah; per-floor parapet ring around each deck oculus (`interior/perspective06.jpg`, `interior/penampakan…webp`) | oval annulus + low rim |
 | Decks / floors ×5 | Open parking-garage decks: slab + square column grid + open sides + fascia/railing edge; annular oval (outer + spine void), 5 levels @ 12 m (`exterior/perspective03.jpg`, `exterior/perspective05.jpg`, `aerial/Screenshot…181836.png`) | annular oval slabs + arrayed columns |
-| Columns | Square concrete columns on a grid; one master, instanced around perimeter + interior rings (`exterior/perspective03.jpg`, `models/wireframe03/05.jpg`) | capped box master + Array |
+| Columns | **PERIMETER PIERS ONLY — interior intentionally COLUMN-FREE** (DATA web 2026-06-15: clear spans 60-100 m so pilgrims see all 3 jamrah from anywhere; deck box girders @9 m supported at edges). Big square edge piers, NOT a dense interior grid (old 12 m grid of ~314 thin posts = REJECTED) (`exterior/perspective03.jpg`, `models/wireframe03/05.jpg`) | capped box piers sampled along the deck-polygon perimeter |
 | ~~Towers (legacy guess)~~ | SUPERSEDED → see "Towers — 3 TYPES" row above + `aerial/REAL_ELEMENT_MAP.md`. (legacy fan-model said ~10–12 generic) | — |
 | ~~Tensile roof (legacy)~~ | SUPERSEDED → see "Canopies ×4" row above. (legacy used solid cone frustums — rejected) | — |
 | Ramps (by FUNCTION) | **#23 inbound fan ramp** from E (Muzdalifah/Mina) → climbs to **L1**; **#5 helix exit ramp** spirals down from upper deck → ground; **#6 elevated exit bridge** from upper deck → over Mina camps to tunnel/Makkah; **#24/#25 top-deck-level parallel roads** (`aerial/REAL_ELEMENT_MAP.md`, `aerial/REAL_LEVEL_ROAD_SYSTEM.md`, `aerial/osm/`) | sloped road slabs from OSM ways, each tied to its correct deck level + one-way direction |
@@ -193,8 +193,15 @@ real aerials (NOT the legacy oval / fan model).
     (descends from L5/L3); 431617753 (east) = L3 via 754→751. See PARAMETERS.ROAD_LEVEL_MAP + osm/way_level_binding.md.
   - Towers → RESOLVED (round 3): 16 total = 11 A (escalator/helipad) + 2 B (vent/observation) + 3 C
     (service/lift), user-placed on osm/TOWERS_userplaced_annotated.png. Read exact XY from that map at trace time.
+  - Deck vs road (which OSM way = 5-floor building) → RESOLVED (ref-clarify 2026-06-15,
+    `_clarify/osm_bridges_labeled__notes.json`): the **5-floor DECK building = central platform
+    only** (user marked red; carries 3 jamrah + 4 canopies + towers) = OSM way **440922995**. The
+    long arm **431634032** and the h10 approach ways are **ROADS/ramps (single sloped level), NOT a
+    5-floor stack** (my earlier build wrongly stacked the whole 431634032 → rejected). User also
+    notes N (431617754/green) & S (431617751/blue) interchanges have some 5-floor sections → add
+    those platform portions to the deck later, not their road arms. See PARAMETERS.DECK_OSM_WAYS.
   - Still open (finalize at render-match when tracing geometry): convert tower pins→exact meters; real
-    non-oval deck edge; which end faces Makkah.
+    non-oval deck edge; which end faces Makkah; add N/S interchange 5-floor platform portions to deck.
 
 ---
 
@@ -206,9 +213,9 @@ budgets are targets. Counts/positions come from OSM + `aerial/REAL_ELEMENT_MAP.m
 | Component file | Emits | TRI_CAP | Collection | Done when (besides [RUH] OK) |
 |----------------|-------|---------|------------|------------------------------|
 | comp_decks.py | 5 deck slabs (real OSM outline, spine void) + fascia/parapet/edge per level | 18000 | STRUCTURE | outline matches OSM trace; 5 levels @ Z 0/12/24/36/48 |
-| comp_columns.py | square column master + arrayed grid per deck | 16000 | STRUCTURE | grid spans decks; instanced, not 5× modelled |
+| comp_columns.py | big square PERIMETER piers (interior column-free, real design) | 16000 | STRUCTURE | piers along deck perimeter only; NOT a dense interior grid |
 | comp_jamrah_walls.py | 3 elliptical jamrah walls (Aqaba>Wusta>Ula) + pebble basins + per-deck oculus parapets | 16000 | JAMARAT | W→E order Aqaba/Wusta/Ula; walls rise through every deck oculus |
-| comp_canopies.py | 4 tensile PTFE umbrella canopies (3 over jamrah + 1 transition plaza, no basin) + central mast + radial cables + oval edge ring | 18000 | ROOF | 4 canopies; Aqaba largest; plaza canopy has NO basin |
+| comp_canopies.py | 4 SMOOTH TAUT PTFE canopies. SHAPE FOLLOWS THE MASTS (user 2026-06-16): footprint polygon passes THROUGH the user-marked mast positions (`canopy_compare3__notes.json` -> `models/jamarat/canopy_masts.json`, counts Ula 11 / Wusta 9 / Transisi 11 / Aqaba 13), one mast = one cusp so curvature follows mast count. Dome over that polygon; a VERTICAL mast at every vertex + cable; peak steel drum; NO central column (centre = jamrah wall) | 18000 | ROOF | footprint+masts = canopy_masts.json; membrane ABOVE jamrah tops |
 | comp_tower_escalator.py | Type A oval escalator/helipad tower master + ~11 instances (louver facade, flat helipad roof) | 14000 | TOWERS | louvered oval body; helipad roof; instanced |
 | comp_tower_ventilation.py | Type B ventilation/observation tower master + 2 instances (flared top + small helipad disc) | 12000 | TOWERS | flared cap; chimney shaft |
 | comp_tower_service.py | Type C half-cylinder service/lift tower master + 3 instances (square-window rows) | 12000 | TOWERS | half-cyl part-embedded; window grid |

@@ -1,0 +1,15 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\roads_annotate.png",
+  "question": "PETA JALAN ter-register ke model (tampak atas). Abu-abu=struktur kita; garis ORANYE=footprint bridge OSM (angka=4 digit akhir way-id); garis BIRU=jalan nyata Mina (OSM highway). Tolong GAMBAR jalur jalan/ramp yang BENAR + beri label: (1) ramp masuk kipas #23 (dari Timur ke L1), (2) ramp keluar helix #5, (3) jembatan layang keluar #6, (4) jalan sejajar dek puncak #24/#25, (5) flyover/jalan kendaraan utama. Tandai juga arah (masuk/keluar) & level tiap jalur kalau bisa.",
+  "answer": "coab yang lebih luas lagi gambarnya, aku mau menggambar dulu bagian yang hilang, sebetulnya aku sudah sempat gambar dianotasi anotasi sebelumnya coba cek dulu ya, \n",
+  "pins": [],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    1500,
+    650
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\roads_annotate__annotated.png",
+  "timestamp": "2026-06-16T09:58:01"
+}

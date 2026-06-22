@@ -73,7 +73,7 @@ def bm_to_object(bm, name, collection, material_key=None):
     bmesh.ops.remove_doubles(bm, verts=bm.verts[:], dist=1e-4)
     ngons = [f for f in bm.faces if len(f.verts) > 4]
     if ngons:
-        bmesh.ops.triangulate_faces(bm, faces=ngons)
+        bmesh.ops.triangulate(bm, faces=ngons)
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces[:])
 
     me = bpy.data.meshes.new(name)

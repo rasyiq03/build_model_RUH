@@ -10,6 +10,39 @@
 # "# VERIFY@render" marks a hypothesis to confirm at the render-match gate (master §9) before CALIBRATED=True.
 
 import math
+import os
+import json
+
+# --- Real OSM footprint loader (GROUND TRUTH for deck/road shape) -------------
+# Polygons are already reprojected to local meters + rotated (long axis = Y) in
+# references/aerial/osm/local_meters.json ("rotation_rad_applied"). This is the
+# authoritative non-oval footprint (legacy oval = REJECTED, see AGENTS USER OVERRIDE).
+_OSM_LOCAL_METERS = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "references", "aerial", "osm", "local_meters.json",
+)
+# 5-FLOOR DECK building footprint = central platform ONLY.
+# USER CLARIFY 2026-06-15 (_clarify/osm_bridges_labeled__notes.json): the long arm
+# (431634032) is a ROAD/ramp, NOT a 5-floor stack. The 5-floor building is the central
+# platform (user marked red) that carries all 3 jamrah + 4 canopies + towers = way 440922995.
+# Long arms / approaches (431634032, 431617753, 751/754/755/758/759) -> comp_roads/comp_ramps_*.
+# TODO: user notes the N (green 431617754) & S (blue 431617751) interchanges have some 5-floor
+#       sections too -> add those platform portions to the deck later (not their road arms).
+DECK_OSM_WAYS = ["440922995"]   # central jamarat platform (contains Ula/Wusta/Aqaba + canopies)
+
+
+def load_osm_ways():
+    """Return {way_id: [(x,y), ...]} for every bridge_way, in local meters.
+    The closing duplicate point (last == first) is dropped."""
+    with open(_OSM_LOCAL_METERS, encoding="utf-8") as f:
+        data = json.load(f)
+    out = {}
+    for w in data["bridge_ways"]:
+        pts = [(round(x, 3), round(y, 3)) for x, y in w["xy"]]
+        if len(pts) > 1 and pts[0] == pts[-1]:
+            pts = pts[:-1]
+        out[w["id"]] = pts
+    return out
 
 POLY_HARD_CAP       = 20000
 POLY_WARN_THRESHOLD = 19000
@@ -74,17 +107,26 @@ TRACE = {
         "WUSTA":  {"id": "wusta", "pos": (0.0,  -56.0), "len_x": 26.0, "thick_y": 4.0, "basin": True, "size": "mid"},
         "AQABAH": {"id": "aqaba", "pos": (0.0,  192.0), "len_x": 30.0, "thick_y": 4.5, "basin": True, "size": "big"},
     },
-    "JAMRAH_HEIGHT_TOTAL": 60.0,          # wall rises through all decks + above roof
+    "JAMRAH_HEIGHT_TOTAL": 52.0,          # tops ~4 m above top deck (48), UNDER the canopy membrane
 
     # --- 4 tensile umbrella canopies (3 over jamrah + 1 transition plaza) ------
     # Ported from legacy ROOF_MEMBRANES (peaks -178/-60/+60/+178) — matches user's "4 canopies".
+    # Real canopies = large NEAR-CIRCULAR white umbrella discs forming a row that
+    # nearly touches (aerial/REAL_aerial_jamarat-bridge.jpg) — NOT small spine-long
+    # ovals. foot_len_y (Y, along spine) ~= foot_wid_x (X, across); Aqaba biggest.
+    # (user 2026-06-15: fix ratio+size). VERIFY@render: exact diameter/overlap.
+    # Real canopies (user 2026-06-16): SMOOTH TAUT membranes; the EDGE CURVATURE
+    # FOLLOWS THE MAST COUNT — each perimeter mast = a cusp, the footprint is the
+    # polygon THROUGH the masts (more masts = rounder). Mast POSITIONS user-marked
+    # (ref-clarify canopy_compare3__notes.json -> models/jamarat/canopy_masts.json).
+    # "masts" is informational; comp_canopies derives count+positions from that json.
     "CANOPIES": [
-        {"over": "ula",        "peak": (0.0, -178.0), "foot_len_y": 44.0, "foot_wid_x": 24.0, "basin": True},
-        {"over": "wusta",      "peak": (0.0,  -60.0), "foot_len_y": 44.0, "foot_wid_x": 24.0, "basin": True},
-        {"over": "transition", "peak": (0.0,   60.0), "foot_len_y": 44.0, "foot_wid_x": 24.0, "basin": False},  # plaza, NO basin
-        {"over": "aqaba",      "peak": (0.0,  178.0), "foot_len_y": 50.0, "foot_wid_x": 28.0, "basin": True},   # biggest
+        {"over": "ula",        "peak": (0.0, -178.0), "masts": 11, "basin": True},
+        {"over": "wusta",      "peak": (0.0,  -60.0), "masts": 9,  "basin": True},
+        {"over": "transition", "peak": (0.0,   60.0), "masts": 11, "basin": False},  # plaza, NO basin
+        {"over": "aqaba",      "peak": (0.0,  178.0), "masts": 13, "basin": True},   # biggest
     ],
-    "CANOPY_PEAK_Z": 60.0, "CANOPY_RIM_Z": 49.5,
+    "CANOPY_PEAK_Z": 68.0, "CANOPY_RIM_Z": 56.0,   # membrane sits ABOVE jamrah tops (52) — no poke-through
 
     # --- Towers: 3 TYPES (~16). positions APPROX (from user photo annotation) ---
     # type: A_ESC_HELIPAD (oval, louver, helipad roof; ~11) | B_VENT_OBS (flared chimney + disc; 2)
@@ -150,7 +192,13 @@ TRACE = {
 # Targets from AGENTS.md §D. DETAIL knobs (verts/thickness) may use sensible defaults.
 # =============================================================================
 DECKS        = {"TARGET_TRI": 18000, "OUTER_VERTS": 96, "SLAB_THICK": 0.5, "FASCIA": 0.8, "PARAPET_H": 1.1}
-COLUMNS      = {"TARGET_TRI": 16000, "SIZE": 1.2, "SPACING": 12.0, "RING_INSET": 2.0, "CHAMFER": 0.08}
+# Columns: PERIMETER PIERS ONLY — interior is intentionally COLUMN-FREE.
+# DATA (web, 2026-06-15): the current Jamaraat Bridge was designed for column-free
+# interior spaces, clear spans 60-100 m (max 97 m) so pilgrims see all 3 jamrah from
+# anywhere; deck = box girders @9 m + cross diaphragms @12 m, supported at the edges.
+# So NO interior grid (old 12 m grid of 314 thin posts = REJECTED). Big edge piers,
+# spaced ~PERIM_SPACING along the perimeter, inset slightly from the edge.
+COLUMNS      = {"TARGET_TRI": 16000, "SIZE": 2.5, "PERIM_SPACING": 12.0, "RING_INSET": 2.2}
 JAMRAH_WALLS = {"TARGET_TRI": 16000, "WALL_VERTS": 24, "THICK_BASE": 4.0, "THICK_TOP": 2.5,
                 "BASIN_RIM_H": 0.9, "PLATFORM_THICK": 0.3, "PLATFORM_PARAPET_H": 1.1}
 CANOPIES     = {"TARGET_TRI": 18000, "MEMBRANE_THICK": 0.1, "GRID_U": 28, "GRID_V": 32,

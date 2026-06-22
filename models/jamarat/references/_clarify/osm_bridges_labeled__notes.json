@@ -1,339 +1,1616 @@
 {
   "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\aerial\\osm\\osm_bridges_labeled.png",
-  "question": "Alat lengkap: Pin, Box, Arrow, Pen, Circle, Line, Text. Kanvas bisa di-ZOOM (tombol +/-/Fit atau Ctrl+scroll). Panel kanan ada 2 gambar referensi (foto nyata + rough trace) - KLIK untuk perbesar (zoom/geser). Tugas: tandai tiap MENARA di peta OSM (pakai Circle atau Pin) + label tipe (A=eskalator/helipad, B=ventilasi, C=servis/lift) pakai tool Text atau komentar pin. PLUS: way timur 431617753 (oranye) masuk ke lantai berapa & arah. Lalu Save & Finish.",
-  "answer": "way timur 431617753 (oranye) masuk ke lantai 3 di zona hijau  431617754, lalu nyambunglagi ke lantai 3 dizona biru  431617751",
-  "pins": [
-    {
-      "n": 1,
-      "x": 342,
-      "y": 544,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 2,
-      "x": 371,
-      "y": 563,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 3,
-      "x": 373,
-      "y": 485,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 4,
-      "x": 409,
-      "y": 506,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 5,
-      "x": 429,
-      "y": 417,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 6,
-      "x": 502,
-      "y": 432,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 7,
-      "x": 795,
-      "y": 548,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 8,
-      "x": 869,
-      "y": 570,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 9,
-      "x": 810,
-      "y": 698,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 10,
-      "x": 742,
-      "y": 776,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 11,
-      "x": 481,
-      "y": 471,
-      "comment": "\"Menara Akses Eskalator (Escalator/Access Towers) atau Menara Evakuasi / Helipad (Evacuation/Helipad Towers).  Berikut adalah detail fungsinya untuk membantu Anda dalam pemodelan 3D nanti:  Fungsi Sirkulasi (Bagian Dalam): Menara-menara ini berisi sistem eskalator dan tangga darurat yang sangat masif. Fungsinya memindahkan ratusan ribu jemaah antar lantai (dek) agar tidak terjadi penumpukan arus manusia.  Fungsi Evakuasi (Bagian Atap): Atap datar di atas bangunan tersebut dirancang sebagai landasan helikopter (helipad) yang digunakan untuk evakuasi medis darurat atau akses VIP.  Karakteristik Visual (Untuk Model 3D): Seperti yang terlihat di gambar, fasad luarnya tidak berupa dinding beton tertutup, melainkan menggunakan kisi-kisi vertikal (louvers) yang berfungsi untuk sirkulasi udara alami dan membiarkan cahaya masuk.\""
-    },
-    {
-      "n": 12,
-      "x": 553,
-      "y": 551,
-      "comment": "\"Menara Ventilasi & Observasi (Ventilation & Observation Tower), dan dalam dokumen desainmu sebelumnya (AGENTS.md) ini kemungkinan besar yang dirujuk sebagai \\\"Menara Flare/Helipad\\\".  Berbeda dengan menara eskalator yang besar dan oval tadi, menara ini punya karakteristik dan fungsi khusus:  Fungsi Ventilasi (Shaft): Fungsi utama badan silindernya yang tinggi adalah sebagai cerobong raksasa. Menara ini menyedot dan membuang udara panas serta asap kendaraan/knalpot dari terowongan bawah tanah dan lantai dasar (Ground Floor) kompleks Jamarat agar sirkulasi udara tetap aman bagi jutaan jemaah.  Ruang Observasi (Bagian \\\"Flare\\\"): Perhatikan bagian atasnya yang mekar atau melebar (flared) tepat di bawah atap. Area ini digunakan sebagai ruang kontrol keamanan dan CCTV gantung untuk memantau kepadatan massa (crowd control) dari titik tertinggi.  Helipad Darurat (Atap): Piringan datar di paling atas juga berfungsi sebagai helipad tambahan berukuran lebih kecil, khusus untuk pendaratan taktis aparat keamanan atau medis darurat.\""
-    },
-    {
-      "n": 13,
-      "x": 674,
-      "y": 736,
-      "comment": "\"Menara Ventilasi & Observasi (Ventilation & Observation Tower), dan dalam dokumen desainmu sebelumnya (AGENTS.md) ini kemungkinan besar yang dirujuk sebagai \\\"Menara Flare/Helipad\\\".  Berbeda dengan menara eskalator yang besar dan oval tadi, menara ini punya karakteristik dan fungsi khusus:  Fungsi Ventilasi (Shaft): Fungsi utama badan silindernya yang tinggi adalah sebagai cerobong raksasa. Menara ini menyedot dan membuang udara panas serta asap kendaraan/knalpot dari terowongan bawah tanah dan lantai dasar (Ground Floor) kompleks Jamarat agar sirkulasi udara tetap aman bagi jutaan jemaah.  Ruang Observasi (Bagian \\\"Flare\\\"): Perhatikan bagian atasnya yang mekar atau melebar (flared) tepat di bawah atap. Area ini digunakan sebagai ruang kontrol keamanan dan CCTV gantung untuk memantau kepadatan massa (crowd control) dari titik tertinggi.  Helipad Darurat (Atap): Piringan datar di paling atas juga berfungsi sebagai helipad tambahan berukuran lebih kecil, khusus untuk pendaratan taktis aparat keamanan atau medis darurat.\""
-    },
-    {
-      "n": 14,
-      "x": 466,
-      "y": 528,
-      "comment": "\"enara Servis & Lift (Service & Elevator Tower) atau Shaft Tangga Darurat.  Berbeda dengan menara eskalator raksasa yang kita bahas pertama, menara ini punya skala dan fungsi yang lebih spesifik dalam kompleks Jamarat:  Akses Vertikal Khusus: Menara ini berisi lift (elevator) dan tangga konvensional yang utamanya ditujukan untuk petugas, tim medis darurat, perawatan fasilitas, atau akses khusus jemaah difabel/lansia. Ini bukan jalur sirkulasi massa utama.  Jalur Utilitas Utama: Selain akses manusia, struktur vertikal seperti ini biasanya menjadi \\\"tulang punggung\\\" (shaft) untuk jalur perpipaan air, pembuangan, dan kabel listrik yang menyuplai kelima lantai dek Jamarat.  Karakteristik Visual (Untuk Model 3D): * Badan: Bentuknya setengah silinder (atau silinder penuh yang sebagian tubuhnya tertanam ke struktur lantai utama).  Fasad: Ciri khas utamanya adalah jendela-jendela kecil berbentuk kotak yang berderet rapi secara vertikal mengikuti posisi bordes tangga atau lantai lift.  Atap: Bagian puncaknya biasanya ditutup dengan struktur khusus (ruang mesin lift) yang bentuknya sedikit melengkung atau menyudut.\""
-    },
-    {
-      "n": 15,
-      "x": 461,
-      "y": 604,
-      "comment": "\"enara Servis & Lift (Service & Elevator Tower) atau Shaft Tangga Darurat.  Berbeda dengan menara eskalator raksasa yang kita bahas pertama, menara ini punya skala dan fungsi yang lebih spesifik dalam kompleks Jamarat:  Akses Vertikal Khusus: Menara ini berisi lift (elevator) dan tangga konvensional yang utamanya ditujukan untuk petugas, tim medis darurat, perawatan fasilitas, atau akses khusus jemaah difabel/lansia. Ini bukan jalur sirkulasi massa utama.  Jalur Utilitas Utama: Selain akses manusia, struktur vertikal seperti ini biasanya menjadi \\\"tulang punggung\\\" (shaft) untuk jalur perpipaan air, pembuangan, dan kabel listrik yang menyuplai kelima lantai dek Jamarat.  Karakteristik Visual (Untuk Model 3D): * Badan: Bentuknya setengah silinder (atau silinder penuh yang sebagian tubuhnya tertanam ke struktur lantai utama).  Fasad: Ciri khas utamanya adalah jendela-jendela kecil berbentuk kotak yang berderet rapi secara vertikal mengikuti posisi bordes tangga atau lantai lift.  Atap: Bagian puncaknya biasanya ditutup dengan struktur khusus (ruang mesin lift) yang bentuknya sedikit melengkung atau menyudut.\""
-    },
-    {
-      "n": 16,
-      "x": 576,
-      "y": 651,
-      "comment": "\"enara Servis & Lift (Service & Elevator Tower) atau Shaft Tangga Darurat.  Berbeda dengan menara eskalator raksasa yang kita bahas pertama, menara ini punya skala dan fungsi yang lebih spesifik dalam kompleks Jamarat:  Akses Vertikal Khusus: Menara ini berisi lift (elevator) dan tangga konvensional yang utamanya ditujukan untuk petugas, tim medis darurat, perawatan fasilitas, atau akses khusus jemaah difabel/lansia. Ini bukan jalur sirkulasi massa utama.  Jalur Utilitas Utama: Selain akses manusia, struktur vertikal seperti ini biasanya menjadi \\\"tulang punggung\\\" (shaft) untuk jalur perpipaan air, pembuangan, dan kabel listrik yang menyuplai kelima lantai dek Jamarat.  Karakteristik Visual (Untuk Model 3D): * Badan: Bentuknya setengah silinder (atau silinder penuh yang sebagian tubuhnya tertanam ke struktur lantai utama).  Fasad: Ciri khas utamanya adalah jendela-jendela kecil berbentuk kotak yang berderet rapi secara vertikal mengikuti posisi bordes tangga atau lantai lift.  Atap: Bagian puncaknya biasanya ditutup dengan struktur khusus (ruang mesin lift) yang bentuknya sedikit melengkung atau menyudut.\""
-    }
-  ],
+  "question": "Tandai mana yang GEDUNG DECK 5 LANTAI (bangunan jamarat bertingkat) vs mana yang JALAN/RAMP/FLYOVER (1 lapis, miring). Khususnya way 431634032 (lengan panjang) dan 440922995 (blob tengah): yang mana deck 5 lantai, yang mana jalan? Beri pin + komentar per way.",
+  "answer": "yang saya tandai merah itu gedung utama 5 lantai, sebeutlnya diare biru dan hijau juga masih ada yang 5 lantainya, kamu lihat hasil anotasi sebelumya, sudah sangat lengkap",
+  "pins": [],
   "shapes": [
     {
-      "type": "line",
-      "color": "#2ea12e",
-      "x0": 450,
-      "y0": 539,
-      "x1": 485,
-      "y1": 426
+      "type": "pen",
+      "color": "#ef4444",
+      "points": [
+        [
+          457,
+          534
+        ],
+        [
+          457,
+          534
+        ],
+        [
+          456,
+          534
+        ],
+        [
+          454,
+          538
+        ],
+        [
+          451,
+          541
+        ],
+        [
+          451,
+          542
+        ],
+        [
+          451,
+          543
+        ],
+        [
+          450,
+          544
+        ],
+        [
+          449,
+          547
+        ],
+        [
+          449,
+          548
+        ],
+        [
+          447,
+          551
+        ],
+        [
+          447,
+          552
+        ],
+        [
+          446,
+          554
+        ],
+        [
+          444,
+          558
+        ],
+        [
+          444,
+          558
+        ],
+        [
+          443,
+          559
+        ],
+        [
+          443,
+          560
+        ],
+        [
+          443,
+          561
+        ],
+        [
+          442,
+          562
+        ],
+        [
+          442,
+          563
+        ],
+        [
+          442,
+          566
+        ],
+        [
+          441,
+          567
+        ],
+        [
+          441,
+          568
+        ],
+        [
+          439,
+          571
+        ],
+        [
+          439,
+          572
+        ],
+        [
+          439,
+          572
+        ],
+        [
+          439,
+          574
+        ],
+        [
+          439,
+          575
+        ],
+        [
+          439,
+          576
+        ],
+        [
+          439,
+          578
+        ],
+        [
+          439,
+          578
+        ],
+        [
+          439,
+          579
+        ],
+        [
+          439,
+          581
+        ],
+        [
+          440,
+          583
+        ],
+        [
+          440,
+          584
+        ],
+        [
+          441,
+          586
+        ],
+        [
+          442,
+          587
+        ],
+        [
+          443,
+          588
+        ],
+        [
+          443,
+          589
+        ],
+        [
+          444,
+          589
+        ],
+        [
+          445,
+          590
+        ],
+        [
+          450,
+          593
+        ],
+        [
+          455,
+          595
+        ],
+        [
+          463,
+          599
+        ],
+        [
+          467,
+          600
+        ],
+        [
+          468,
+          600
+        ],
+        [
+          471,
+          600
+        ],
+        [
+          474,
+          600
+        ],
+        [
+          477,
+          602
+        ],
+        [
+          478,
+          602
+        ],
+        [
+          481,
+          602
+        ],
+        [
+          485,
+          603
+        ],
+        [
+          489,
+          603
+        ],
+        [
+          491,
+          604
+        ],
+        [
+          492,
+          604
+        ],
+        [
+          494,
+          604
+        ],
+        [
+          497,
+          606
+        ],
+        [
+          501,
+          607
+        ],
+        [
+          503,
+          607
+        ],
+        [
+          504,
+          607
+        ],
+        [
+          507,
+          609
+        ],
+        [
+          511,
+          610
+        ],
+        [
+          517,
+          612
+        ],
+        [
+          519,
+          613
+        ],
+        [
+          519,
+          613
+        ],
+        [
+          521,
+          614
+        ],
+        [
+          521,
+          614
+        ],
+        [
+          522,
+          614
+        ],
+        [
+          525,
+          614
+        ],
+        [
+          527,
+          615
+        ],
+        [
+          529,
+          616
+        ],
+        [
+          529,
+          616
+        ],
+        [
+          533,
+          619
+        ],
+        [
+          535,
+          620
+        ],
+        [
+          537,
+          620
+        ],
+        [
+          539,
+          622
+        ],
+        [
+          541,
+          623
+        ],
+        [
+          543,
+          626
+        ],
+        [
+          545,
+          627
+        ],
+        [
+          549,
+          629
+        ],
+        [
+          551,
+          631
+        ],
+        [
+          554,
+          633
+        ],
+        [
+          557,
+          635
+        ],
+        [
+          559,
+          637
+        ],
+        [
+          562,
+          639
+        ],
+        [
+          563,
+          639
+        ],
+        [
+          564,
+          640
+        ],
+        [
+          566,
+          642
+        ],
+        [
+          567,
+          643
+        ],
+        [
+          571,
+          646
+        ],
+        [
+          571,
+          646
+        ],
+        [
+          573,
+          647
+        ],
+        [
+          573,
+          647
+        ],
+        [
+          574,
+          648
+        ],
+        [
+          575,
+          648
+        ],
+        [
+          576,
+          650
+        ],
+        [
+          578,
+          652
+        ],
+        [
+          580,
+          654
+        ],
+        [
+          581,
+          655
+        ],
+        [
+          583,
+          659
+        ],
+        [
+          586,
+          661
+        ],
+        [
+          588,
+          663
+        ],
+        [
+          590,
+          665
+        ],
+        [
+          593,
+          667
+        ],
+        [
+          597,
+          669
+        ],
+        [
+          599,
+          671
+        ],
+        [
+          601,
+          672
+        ],
+        [
+          604,
+          675
+        ],
+        [
+          609,
+          677
+        ],
+        [
+          611,
+          678
+        ],
+        [
+          614,
+          679
+        ],
+        [
+          615,
+          680
+        ],
+        [
+          616,
+          681
+        ],
+        [
+          617,
+          682
+        ],
+        [
+          620,
+          683
+        ],
+        [
+          623,
+          685
+        ],
+        [
+          626,
+          688
+        ],
+        [
+          628,
+          689
+        ],
+        [
+          629,
+          689
+        ],
+        [
+          630,
+          690
+        ],
+        [
+          633,
+          692
+        ],
+        [
+          636,
+          693
+        ],
+        [
+          637,
+          694
+        ],
+        [
+          639,
+          695
+        ],
+        [
+          643,
+          696
+        ],
+        [
+          644,
+          697
+        ],
+        [
+          646,
+          699
+        ],
+        [
+          648,
+          700
+        ],
+        [
+          649,
+          701
+        ],
+        [
+          649,
+          702
+        ],
+        [
+          653,
+          703
+        ],
+        [
+          657,
+          706
+        ],
+        [
+          661,
+          709
+        ],
+        [
+          663,
+          711
+        ],
+        [
+          665,
+          711
+        ],
+        [
+          667,
+          713
+        ],
+        [
+          669,
+          714
+        ],
+        [
+          671,
+          716
+        ],
+        [
+          672,
+          717
+        ],
+        [
+          673,
+          718
+        ],
+        [
+          674,
+          718
+        ],
+        [
+          677,
+          720
+        ],
+        [
+          679,
+          722
+        ],
+        [
+          681,
+          723
+        ],
+        [
+          684,
+          724
+        ],
+        [
+          685,
+          726
+        ],
+        [
+          686,
+          727
+        ],
+        [
+          689,
+          729
+        ],
+        [
+          690,
+          730
+        ],
+        [
+          690,
+          730
+        ],
+        [
+          691,
+          731
+        ],
+        [
+          692,
+          732
+        ],
+        [
+          694,
+          732
+        ],
+        [
+          695,
+          733
+        ],
+        [
+          697,
+          734
+        ],
+        [
+          698,
+          735
+        ],
+        [
+          699,
+          736
+        ],
+        [
+          699,
+          736
+        ],
+        [
+          700,
+          736
+        ],
+        [
+          701,
+          736
+        ],
+        [
+          701,
+          737
+        ],
+        [
+          703,
+          737
+        ],
+        [
+          704,
+          739
+        ],
+        [
+          706,
+          739
+        ],
+        [
+          707,
+          740
+        ],
+        [
+          710,
+          741
+        ],
+        [
+          711,
+          742
+        ],
+        [
+          712,
+          742
+        ],
+        [
+          714,
+          742
+        ],
+        [
+          715,
+          742
+        ],
+        [
+          716,
+          742
+        ],
+        [
+          717,
+          742
+        ],
+        [
+          718,
+          742
+        ],
+        [
+          719,
+          742
+        ],
+        [
+          721,
+          740
+        ],
+        [
+          722,
+          740
+        ],
+        [
+          723,
+          739
+        ],
+        [
+          723,
+          739
+        ],
+        [
+          725,
+          737
+        ],
+        [
+          726,
+          736
+        ],
+        [
+          726,
+          735
+        ],
+        [
+          726,
+          732
+        ],
+        [
+          726,
+          732
+        ],
+        [
+          727,
+          731
+        ],
+        [
+          729,
+          728
+        ],
+        [
+          730,
+          727
+        ],
+        [
+          730,
+          726
+        ],
+        [
+          730,
+          725
+        ],
+        [
+          730,
+          723
+        ],
+        [
+          731,
+          722
+        ],
+        [
+          733,
+          720
+        ],
+        [
+          733,
+          720
+        ],
+        [
+          735,
+          717
+        ],
+        [
+          736,
+          716
+        ],
+        [
+          737,
+          715
+        ],
+        [
+          737,
+          715
+        ],
+        [
+          737,
+          714
+        ],
+        [
+          738,
+          713
+        ],
+        [
+          738,
+          711
+        ],
+        [
+          738,
+          711
+        ],
+        [
+          738,
+          710
+        ],
+        [
+          738,
+          708
+        ],
+        [
+          738,
+          708
+        ],
+        [
+          738,
+          707
+        ],
+        [
+          738,
+          706
+        ],
+        [
+          738,
+          706
+        ],
+        [
+          738,
+          705
+        ],
+        [
+          739,
+          704
+        ],
+        [
+          739,
+          704
+        ],
+        [
+          739,
+          702
+        ],
+        [
+          739,
+          702
+        ],
+        [
+          739,
+          701
+        ],
+        [
+          739,
+          699
+        ],
+        [
+          739,
+          699
+        ],
+        [
+          739,
+          698
+        ],
+        [
+          738,
+          697
+        ],
+        [
+          738,
+          696
+        ],
+        [
+          738,
+          695
+        ],
+        [
+          737,
+          693
+        ],
+        [
+          737,
+          692
+        ],
+        [
+          735,
+          691
+        ],
+        [
+          734,
+          690
+        ],
+        [
+          734,
+          689
+        ],
+        [
+          733,
+          687
+        ],
+        [
+          731,
+          686
+        ],
+        [
+          730,
+          684
+        ],
+        [
+          728,
+          682
+        ],
+        [
+          725,
+          679
+        ],
+        [
+          719,
+          676
+        ],
+        [
+          714,
+          675
+        ],
+        [
+          707,
+          671
+        ],
+        [
+          702,
+          668
+        ],
+        [
+          695,
+          666
+        ],
+        [
+          691,
+          664
+        ],
+        [
+          685,
+          661
+        ],
+        [
+          680,
+          659
+        ],
+        [
+          676,
+          657
+        ],
+        [
+          672,
+          656
+        ],
+        [
+          670,
+          655
+        ],
+        [
+          667,
+          654
+        ],
+        [
+          666,
+          652
+        ],
+        [
+          665,
+          652
+        ],
+        [
+          662,
+          651
+        ],
+        [
+          661,
+          650
+        ],
+        [
+          658,
+          647
+        ],
+        [
+          657,
+          647
+        ],
+        [
+          656,
+          646
+        ],
+        [
+          655,
+          644
+        ],
+        [
+          654,
+          643
+        ],
+        [
+          652,
+          640
+        ],
+        [
+          650,
+          638
+        ],
+        [
+          649,
+          635
+        ],
+        [
+          647,
+          634
+        ],
+        [
+          645,
+          631
+        ],
+        [
+          643,
+          629
+        ],
+        [
+          641,
+          627
+        ],
+        [
+          639,
+          624
+        ],
+        [
+          636,
+          622
+        ],
+        [
+          635,
+          619
+        ],
+        [
+          633,
+          617
+        ],
+        [
+          631,
+          616
+        ],
+        [
+          628,
+          614
+        ],
+        [
+          627,
+          612
+        ],
+        [
+          626,
+          611
+        ],
+        [
+          623,
+          611
+        ],
+        [
+          622,
+          610
+        ],
+        [
+          621,
+          608
+        ],
+        [
+          621,
+          608
+        ],
+        [
+          619,
+          607
+        ],
+        [
+          619,
+          606
+        ],
+        [
+          615,
+          605
+        ],
+        [
+          614,
+          604
+        ],
+        [
+          613,
+          604
+        ],
+        [
+          613,
+          603
+        ],
+        [
+          613,
+          603
+        ],
+        [
+          614,
+          603
+        ],
+        [
+          618,
+          605
+        ],
+        [
+          622,
+          609
+        ],
+        [
+          627,
+          615
+        ],
+        [
+          632,
+          618
+        ],
+        [
+          635,
+          621
+        ],
+        [
+          637,
+          623
+        ]
+      ]
     },
     {
-      "type": "line",
-      "color": "#2ea12e",
-      "x0": 418,
-      "y0": 528,
-      "x1": 453,
-      "y1": 417
-    },
-    {
-      "type": "line",
-      "color": "#2ea12e",
-      "x0": 453,
-      "y0": 417,
-      "x1": 487,
-      "y1": 426
-    },
-    {
-      "type": "line",
-      "color": "#2ea12e",
-      "x0": 421,
-      "y0": 512,
-      "x1": 366,
-      "y1": 487
-    },
-    {
-      "type": "line",
-      "color": "#2ea12e",
-      "x0": 365,
-      "y0": 486,
-      "x1": 338,
-      "y1": 535
-    },
-    {
-      "type": "line",
-      "color": "#2ea12e",
-      "x0": 338,
-      "y0": 535,
-      "x1": 402,
-      "y1": 556
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 358,
-      "y0": 527,
-      "x1": 358,
-      "y1": 527
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 333,
-      "y0": 535,
-      "x1": 364,
-      "y1": 564
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 389,
-      "y0": 551,
-      "x1": 356,
-      "y1": 582
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 354,
-      "y0": 471,
-      "x1": 394,
-      "y1": 513
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 387,
-      "y0": 487,
-      "x1": 423,
-      "y1": 524
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 419,
-      "y0": 396,
-      "x1": 453,
-      "y1": 444
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 489,
-      "y0": 418,
-      "x1": 523,
-      "y1": 456
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 781,
-      "y0": 530,
-      "x1": 818,
-      "y1": 582
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 889,
-      "y0": 554,
-      "x1": 844,
-      "y1": 595
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 788,
-      "y0": 682,
-      "x1": 827,
-      "y1": 724
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 723,
-      "y0": 760,
-      "x1": 763,
-      "y1": 798
-    },
-    {
-      "type": "ellipse",
-      "color": "#00e1ff",
-      "x0": 465,
-      "y0": 455,
-      "x1": 506,
-      "y1": 497
-    },
-    {
-      "type": "ellipse",
-      "color": "#a600ff",
-      "x0": 538,
-      "y0": 538,
-      "x1": 570,
-      "y1": 570
-    },
-    {
-      "type": "ellipse",
-      "color": "#a600ff",
-      "x0": 662,
-      "y0": 723,
-      "x1": 693,
-      "y1": 758
-    },
-    {
-      "type": "ellipse",
-      "color": "#fff700",
-      "x0": 449,
-      "y0": 518,
-      "x1": 479,
-      "y1": 544
-    },
-    {
-      "type": "ellipse",
-      "color": "#fff700",
-      "x0": 438,
-      "y0": 594,
-      "x1": 479,
-      "y1": 622
-    },
-    {
-      "type": "ellipse",
-      "color": "#fff700",
-      "x0": 554,
-      "y0": 638,
-      "x1": 591,
-      "y1": 668
-    },
-    {
-      "type": "arrow",
-      "color": "#fff700",
-      "x0": 204,
-      "y0": 370,
-      "x1": 430,
-      "y1": 474
-    },
-    {
-      "type": "arrow",
-      "color": "#fff700",
-      "x0": 479,
-      "y0": 501,
-      "x1": 709,
-      "y1": 561
-    },
-    {
-      "type": "arrow",
-      "color": "#fff700",
-      "x0": 723,
-      "y0": 567,
-      "x1": 785,
-      "y1": 638
-    },
-    {
-      "type": "arrow",
-      "color": "#fff700",
-      "x0": 770,
-      "y0": 638,
-      "x1": 770,
-      "y1": 652
-    },
-    {
-      "type": "text",
-      "color": "#fff700",
-      "x0": 198,
-      "y0": 342,
-      "text": "way timur 431617753 (oranye) masuk ke lantai"
+      "type": "pen",
+      "color": "#ef4444",
+      "points": [
+        [
+          726,
+          682
+        ],
+        [
+          726,
+          681
+        ],
+        [
+          725,
+          679
+        ],
+        [
+          725,
+          677
+        ],
+        [
+          723,
+          675
+        ],
+        [
+          721,
+          672
+        ],
+        [
+          720,
+          671
+        ],
+        [
+          719,
+          670
+        ],
+        [
+          717,
+          667
+        ],
+        [
+          714,
+          663
+        ],
+        [
+          713,
+          661
+        ],
+        [
+          710,
+          660
+        ],
+        [
+          707,
+          658
+        ],
+        [
+          704,
+          656
+        ],
+        [
+          703,
+          655
+        ],
+        [
+          700,
+          654
+        ],
+        [
+          697,
+          652
+        ],
+        [
+          694,
+          651
+        ],
+        [
+          693,
+          650
+        ],
+        [
+          690,
+          649
+        ],
+        [
+          689,
+          648
+        ],
+        [
+          687,
+          647
+        ],
+        [
+          686,
+          647
+        ],
+        [
+          683,
+          645
+        ],
+        [
+          681,
+          644
+        ],
+        [
+          676,
+          641
+        ],
+        [
+          673,
+          639
+        ],
+        [
+          670,
+          638
+        ],
+        [
+          669,
+          638
+        ],
+        [
+          668,
+          637
+        ],
+        [
+          667,
+          636
+        ],
+        [
+          666,
+          635
+        ],
+        [
+          663,
+          633
+        ],
+        [
+          662,
+          632
+        ],
+        [
+          660,
+          630
+        ],
+        [
+          658,
+          628
+        ],
+        [
+          655,
+          626
+        ],
+        [
+          652,
+          624
+        ],
+        [
+          650,
+          622
+        ],
+        [
+          647,
+          619
+        ],
+        [
+          646,
+          618
+        ],
+        [
+          643,
+          617
+        ],
+        [
+          641,
+          615
+        ],
+        [
+          637,
+          612
+        ],
+        [
+          634,
+          608
+        ],
+        [
+          629,
+          606
+        ],
+        [
+          627,
+          604
+        ],
+        [
+          626,
+          604
+        ],
+        [
+          623,
+          603
+        ],
+        [
+          621,
+          600
+        ],
+        [
+          617,
+          598
+        ],
+        [
+          611,
+          594
+        ],
+        [
+          607,
+          592
+        ],
+        [
+          604,
+          590
+        ],
+        [
+          603,
+          590
+        ],
+        [
+          598,
+          587
+        ],
+        [
+          595,
+          586
+        ],
+        [
+          588,
+          583
+        ],
+        [
+          585,
+          582
+        ],
+        [
+          582,
+          580
+        ],
+        [
+          578,
+          579
+        ],
+        [
+          577,
+          579
+        ],
+        [
+          572,
+          577
+        ],
+        [
+          569,
+          577
+        ],
+        [
+          567,
+          576
+        ],
+        [
+          565,
+          576
+        ],
+        [
+          565,
+          576
+        ],
+        [
+          562,
+          576
+        ],
+        [
+          561,
+          575
+        ],
+        [
+          555,
+          575
+        ],
+        [
+          554,
+          574
+        ],
+        [
+          551,
+          574
+        ],
+        [
+          549,
+          574
+        ],
+        [
+          545,
+          573
+        ],
+        [
+          544,
+          572
+        ],
+        [
+          542,
+          572
+        ],
+        [
+          539,
+          572
+        ],
+        [
+          539,
+          572
+        ],
+        [
+          537,
+          572
+        ],
+        [
+          535,
+          571
+        ],
+        [
+          533,
+          570
+        ],
+        [
+          531,
+          570
+        ],
+        [
+          530,
+          569
+        ],
+        [
+          528,
+          567
+        ],
+        [
+          526,
+          566
+        ],
+        [
+          525,
+          566
+        ],
+        [
+          525,
+          566
+        ],
+        [
+          523,
+          566
+        ],
+        [
+          522,
+          564
+        ],
+        [
+          521,
+          563
+        ],
+        [
+          519,
+          562
+        ],
+        [
+          517,
+          559
+        ],
+        [
+          514,
+          558
+        ],
+        [
+          511,
+          555
+        ],
+        [
+          510,
+          555
+        ],
+        [
+          509,
+          554
+        ],
+        [
+          506,
+          552
+        ],
+        [
+          504,
+          551
+        ],
+        [
+          502,
+          551
+        ],
+        [
+          499,
+          548
+        ],
+        [
+          496,
+          548
+        ],
+        [
+          493,
+          547
+        ],
+        [
+          490,
+          545
+        ],
+        [
+          488,
+          544
+        ],
+        [
+          484,
+          544
+        ],
+        [
+          475,
+          541
+        ],
+        [
+          471,
+          540
+        ],
+        [
+          466,
+          538
+        ],
+        [
+          464,
+          538
+        ],
+        [
+          462,
+          537
+        ],
+        [
+          461,
+          536
+        ],
+        [
+          459,
+          536
+        ],
+        [
+          457,
+          536
+        ],
+        [
+          456,
+          536
+        ],
+        [
+          454,
+          535
+        ]
+      ]
     }
   ],
-  "reference_images": [
-    "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\aerial\\REAL_aerial_jamarat-bridge.jpg",
-    "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\aerial\\osm\\rough_trace_overlay.png"
-  ],
+  "reference_images": [],
   "uploaded_references": [],
   "image_size": [
     990,
     1210
   ],
   "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\jamarat\\references\\_clarify\\osm_bridges_labeled__annotated.png",
-  "timestamp": "2026-06-14T17:09:35"
+  "timestamp": "2026-06-15T19:47:11"
 }

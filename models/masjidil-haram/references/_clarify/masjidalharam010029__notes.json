@@ -1,0 +1,45 @@
+{
+  "source_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\masjidil-haram\\references\\aerial\\masjidalharam010029.jpg",
+  "question": "Demo anotasi: Tolong tandai (1) posisi & bentuk tembok setengah lingkaran Hijr Ismail di sisi Ka'bah, dan (2) struktur kecil di dekat Ka'bah (Maqam Ibrahim). Beri pin + komentar bila perlu.",
+  "answer": "",
+  "pins": [
+    {
+      "n": 1,
+      "x": 1046,
+      "y": 598,
+      "comment": "ini hijr ismail"
+    },
+    {
+      "n": 2,
+      "x": 1010,
+      "y": 745,
+      "comment": "ini maqam ibrahim"
+    }
+  ],
+  "shapes": [
+    {
+      "type": "ellipse",
+      "color": "#ef4444",
+      "x0": 954,
+      "y0": 554,
+      "x1": 1083,
+      "y1": 687
+    },
+    {
+      "type": "ellipse",
+      "color": "#ef4444",
+      "x0": 980,
+      "y0": 706,
+      "x1": 1065,
+      "y1": 776
+    }
+  ],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    1920,
+    1080
+  ],
+  "annotated_image": "D:\\Project\\project-akademik\\tugas-besar-komputer-grafik-eas-roblox\\Build_model\\ruh\\models\\masjidil-haram\\references\\_clarify\\masjidalharam010029__annotated.png",
+  "timestamp": "2026-06-14T19:18:27"
+}
