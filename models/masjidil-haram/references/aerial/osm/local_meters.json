@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "generated": "2026-06-22",
+    "origin_latlon": [21.42250, 39.82611],
+    "origin_description": "Kaaba centre = local (0, 0)",
+    "projection": "equirectangular",
+    "m_per_deg_lat": 110574.0,
+    "m_per_deg_lon": 103600.0,
+    "formula": {
+      "local_x": "(lon - 39.82611) * 103600",
+      "local_y": "(lat - 21.42250) * 110574"
+    },
+    "axes": "X = East(+), Y = North(+), Z = up"
+  },
+
+  "mosque_boundary_polygon": {
+    "note": "Simplified 9-point CW outline derived from OSM relation 1472531 outer ways.",
+    "full_polygon_file": "polygon_outer_raw.json",
+    "full_polygon_point_count": 596,
+    "simplification_tolerance_m": 30,
+    "outline_cw": [
+      { "label": "N peak",      "local_xy": [ -29.0,  683.0], "source_way": 910620815, "source_latlon": [21.4286800, 39.8258289] },
+      { "label": "NE upper",    "local_xy": [  62.0,  616.0], "source_way": 910620815, "source_latlon": [21.4280648, 39.8267062] },
+      { "label": "E peak",      "local_xy": [ 174.0,    0.0], "source_way": 670894690, "source_latlon": [21.4225025, 39.8277915] },
+      { "label": "SE corner",   "local_xy": [ 124.0,  -98.0], "source_way": 967545702, "source_latlon": [21.4216128, 39.8273095] },
+      { "label": "S peak",      "local_xy": [-117.0, -193.0], "source_way": 301819561, "source_latlon": [21.4207548, 39.8249809] },
+      { "label": "SW corner",   "local_xy": [-221.0, -129.0], "source_way": 967545686, "source_latlon": [21.4213361, 39.8239724] },
+      { "label": "W-center",    "local_xy": [-155.0,    8.0], "source_way": 967545684, "source_latlon": [21.4225684, 39.8245400] },
+      { "label": "W-mid",       "local_xy": [-362.0,  136.0], "source_way": 967545680, "source_latlon": [21.4237280, 39.8226178] },
+      { "label": "W peak",      "local_xy": [-611.0,  304.0], "source_way": 910620815, "source_latlon": [21.4252478, 39.8202194] }
+    ]
+  },
+
+  "kaaba": {
+    "local_xy": [0.0, 0.0],
+    "note": "Origin — all coordinates relative to Kaaba centre"
+  },
+
+  "safa": {
+    "source_latlon": [21.4217996, 39.8274307],
+    "local_xy": [137.0, -77.5]
+  },
+  "marwa": {
+    "source_latlon": [21.4251754, 39.8271276],
+    "local_xy": [105.4, 295.9]
+  },
+  "masa_straight_length_m": 374.9,
+
+  "gates": [
+    { "name": "King Abdul Aziz Gate 1", "source_latlon": [21.4210447, 39.8258406], "local_xy": [ -28.0, -160.9] },
+    { "name": "King Fahd Gate 79",      "source_latlon": [21.4212320, 39.8240461], "local_xy": [-213.8, -140.2] },
+    { "name": "Al-Fath Gate 30",        "source_latlon": [21.4240151, 39.8265147], "local_xy": [  41.9,  167.6] },
+    { "name": "Bab Al-Marwah 25",       "source_latlon": [21.4253183, 39.8273872], "local_xy": [ 132.3,  311.7] },
+    { "name": "Quraish Gate 28",        "source_latlon": [21.4254428, 39.8269231], "local_xy": [  84.2,  325.5] }
+  ],
+
+  "facilities": [
+    { "label": "WC 6 (Men)",    "source_latlon": [21.4204210, 39.8230671], "local_xy": [-315.2, -229.9] },
+    { "label": "WC 7 (Women)",  "source_latlon": [21.4196651, 39.8227961], "local_xy": [-343.2, -313.5] },
+    { "label": "WC 13 (Men)",   "source_latlon": [21.4261655, 39.8250195], "local_xy": [-112.9,  405.3] },
+    { "label": "WC 14 (Women)", "source_latlon": [21.4263210, 39.8261373], "local_xy": [   2.8,  422.5] }
+  ],
+
+  "minarets": [
+    { "source_latlon": [21.4211291, 39.8241897], "local_xy": [-198.9, -151.6] },
+    { "source_latlon": [21.4210716, 39.8260306], "local_xy": [  -8.2, -158.0] },
+    { "source_latlon": [21.4211369, 39.8256866], "local_xy": [ -43.8, -150.7] },
+    { "source_latlon": [21.4239776, 39.8263238], "local_xy": [  22.1,  163.4] },
+    { "source_latlon": [21.4239128, 39.8266542], "local_xy": [  56.4,  156.2] },
+    { "source_latlon": [21.4216066, 39.8272499], "local_xy": [ 118.1,  -98.8] },
+    { "source_latlon": [21.4229664, 39.8246794], "local_xy": [-148.2,   51.6] },
+    { "source_latlon": [21.4226539, 39.8246073], "local_xy": [-155.7,   17.0] }
+  ]
+}
