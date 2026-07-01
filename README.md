@@ -12,7 +12,7 @@ That's where shared imports resolve and where the `ref-clarify` skill is found.
 
 ## What's here
 
-```
+```JavaScript
 AGENTS.md            Master rules — read this first. How EVERY model is built.
 ruh_common.py        Shared bmesh helpers + the VALIDATOR (used by every component).
 scaffold_model.py    Generate a new models/<model>/ skeleton from the template.

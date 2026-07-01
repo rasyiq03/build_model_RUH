@@ -28,12 +28,14 @@ COLLECTION = "ROOF"
 TRI_CAP    = P.CANOPIES["TARGET_TRI"]
 
 _MASTS = os.path.join(MODEL, "canopy_masts.json")
-_SCALES = (1.0, 0.80, 0.58, 0.34)   # concentric dome rings (smooth surface)
-_INSET = 0.85   # cable attach ring sits INSIDE the masts; the gap is spanned by cables
-_EDGE_SAG = 0.18    # free edge STRETCHES inward between cable points (taut catenary)
-_SUB = 4            # edge subdivisions per cable span
-_CUSP_DZ = 0.0      # NO vertical wave — membrane is taut/stretched, not undulating
-_SAG_DZ = 0.0       # (user 2026-06-16: "merenggang, bukan bergelombang")
+_SCALES = (1.0, 0.84, 0.66, 0.46, 0.24)   # concentric dome rings (more = smoother dome)
+_INSET = 0.92        # cable attach ring sits just INSIDE the masts
+# Real canopies = SMOOTH near-circular white umbrella discs (REAL_aerial_jamarat-bridge.jpg),
+# NOT deep stars. The membrane edge is a SMOOTH Catmull-Rom curve THROUGH the mast points
+# (honours user 2026-06-16 "shape follows masts": each mast still sits on the edge), with only
+# a VERY shallow inward scallop between masts for the subtle umbrella-rib look.
+_EDGE_SCALLOP = 0.035   # gentle inward bow between masts (was 0.18 deep cusp = star — REJECTED)
+_SUB = 6             # samples per mast span along the smooth edge
 _CROSS = 6
 # canopy "over" name -> outline json key
 _KEY = {"ula": "ula", "wusta": "wusta", "transition": "transisi", "aqaba": "aqabah"}
@@ -42,24 +44,37 @@ MAT_MEMBRANE = 0
 MAT_METAL = 1
 
 
-def _tensile_perimeter(cable_pts, cx, cy, rim_z, sag, cusp_dz, sag_dz, sub):
-    """Physical tensile free edge: between two cable points the membrane edge
-    bows INWARD (catenary, toward centroid) and DOWN, while it is pulled UP at
-    each cable point (anticlastic). Returns a dense list of (x,y,z)."""
+def _catmull_rom(p0, p1, p2, p3, t):
+    """Uniform Catmull-Rom interpolation; the curve passes THROUGH p1..p2."""
+    t2, t3 = t * t, t * t * t
+    return tuple(
+        0.5 * ((2 * p1[d]) + (-p0[d] + p2[d]) * t
+               + (2 * p0[d] - 5 * p1[d] + 4 * p2[d] - p3[d]) * t2
+               + (-p0[d] + 3 * p1[d] - 3 * p2[d] + p3[d]) * t3)
+        for d in (0, 1)
+    )
+
+
+def _smooth_perimeter(cable_pts, cx, cy, rim_z, scallop, sub):
+    """SMOOTH near-circular free edge: a closed Catmull-Rom spline THROUGH the
+    cable/mast points (so each mast still sits on the rim), sampled finely so the
+    outline reads as a round umbrella disc. A very shallow inward scallop between
+    masts gives the subtle rib look — NOT the old deep star cusp. z = rim (flat,
+    taut edge). Returns a dense list of (x,y,z)."""
     out = []
     n = len(cable_pts)
     for i in range(n):
-        ax, ay = cable_pts[i]
-        bx, by = cable_pts[(i + 1) % n]
+        p0 = cable_pts[(i - 1) % n]
+        p1 = cable_pts[i]
+        p2 = cable_pts[(i + 1) % n]
+        p3 = cable_pts[(i + 2) % n]
         for k in range(sub):
             t = k / sub
-            w = math.sin(math.pi * t)                 # 0 at cable pts, 1 at mid-edge
-            x = ax + (bx - ax) * t
-            y = ay + (by - ay) * t
-            x += (cx - x) * (sag * w)                 # bow inward
-            y += (cy - y) * (sag * w)
-            z = rim_z + cusp_dz * (1.0 - w) - sag_dz * w
-            out.append((x, y, z))
+            x, y = _catmull_rom(p0, p1, p2, p3, t)
+            w = math.sin(math.pi * t)                 # 0 at masts, 1 mid-span
+            x += (cx - x) * (scallop * w)             # gentle inward scallop
+            y += (cy - y) * (scallop * w)
+            out.append((x, y, rim_z))
     return out
 
 
@@ -69,9 +84,11 @@ def _membrane_poly(bm, perim, cx, cy, peak_z, thick):
     n = len(perim)
 
     def ring(s, dz):
+        # Parabolic cap (1 - s^2): FLAT, rounded top (zero slope at centre, no
+        # sharp point) easing to the rim — a gentle umbrella dome, not a pyramid.
         verts = []
         for (x, y, ze) in perim:
-            z = peak_z - (peak_z - ze) * (s ** 1.4) + dz
+            z = ze + (peak_z - ze) * (1.0 - s * s) + dz
             verts.append(bm.verts.new((cx + (x - cx) * s, cy + (y - cy) * s, z)))
         return verts
 
@@ -142,8 +159,8 @@ def build(collection=None):
         cy = sum(p[1] for p in poly) / len(poly)
         # Cable attach points sit INSIDE the masts; the membrane hangs from cables.
         cable_pts = [(cx + (x - cx) * _INSET, cy + (y - cy) * _INSET) for (x, y) in poly]
-        # Free edge bows inward between cable points (physical tensile catenary).
-        perim = _tensile_perimeter(cable_pts, cx, cy, rim_z, _EDGE_SAG, _CUSP_DZ, _SAG_DZ, _SUB)
+        # Smooth round umbrella edge: Catmull-Rom spline through the cable/mast points.
+        perim = _smooth_perimeter(cable_pts, cx, cy, rim_z, _EDGE_SCALLOP, _SUB)
         _membrane_poly(bm, perim, cx, cy, peak_z, K["MEMBRANE_THICK"])
         _ring_tube(bm, perim, K["RING_TUBE"])
 
@@ -154,7 +171,7 @@ def build(collection=None):
         for (mx, my), (ex, ey) in zip(poly, cable_pts):
             mat, length = C.segment_matrix((mx, my, deck_top), (mx, my, mast_top))
             C.add_capped_cone(bm, 0.8, 0.5, length, mat, 8)
-            cmat, clen = C.segment_matrix((mx, my, mast_top), (ex, ey, rim_z + _CUSP_DZ))
+            cmat, clen = C.segment_matrix((mx, my, mast_top), (ex, ey, rim_z))
             C.add_capped_cone(bm, K["CABLE_RADIUS"], K["CABLE_RADIUS"], clen, cmat, 4)
         for f in bm.faces:
             if f not in before:

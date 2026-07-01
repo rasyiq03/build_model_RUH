@@ -172,3 +172,4 @@ def apply_all(collections):
                 continue
             if any((slot.name in image_slots) for slot in obj.data.materials if slot):
                 _smart_uv(obj)
+

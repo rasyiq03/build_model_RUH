@@ -5,13 +5,6 @@
 *.tmp
 state/
 
-# Rendered output
-renders/
-*.png
-*.jpg
-*.jpeg
-*.exr
-*.hdr
 
 # Python cache
 __pycache__/
