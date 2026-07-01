@@ -1,0 +1,485 @@
+{
+  "source_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\masjidalharam_010019.jpg",
+  "question": "Perhatikan bangunan-bangunan di luar ring utama (E ring). Tandai dengan pin: (1) sayap ekspansi multi-lantai di sisi N, W, SW, S — berapa lantai yang terlihat? (2) bangunan connector di ujung Mas'a (utara dan selatan) — bentuk dan tingginya? (3) ada bangunan lain yang belum tertandai tapi penting untuk dibangun di model?",
+  "answer": "bnagunan oenitng namun belum teralisasi adalah bangunan perluasan ketiga/ raja abdullah \n",
+  "pins": [
+    {
+      "n": 1,
+      "x": 1165,
+      "y": 788,
+      "comment": "kaaba"
+    },
+    {
+      "n": 2,
+      "x": 1172,
+      "y": 699,
+      "comment": "daerah octagonal ring "
+    },
+    {
+      "n": 3,
+      "x": 1328,
+      "y": 579,
+      "comment": "lorong masa"
+    },
+    {
+      "n": 4,
+      "x": 892,
+      "y": 908,
+      "comment": "sayap ekspansi "
+    },
+    {
+      "n": 5,
+      "x": 622,
+      "y": 493,
+      "comment": "sayap ekspansi "
+    },
+    {
+      "n": 6,
+      "x": 862,
+      "y": 332,
+      "comment": "sayap ekspansi "
+    },
+    {
+      "n": 7,
+      "x": 1065,
+      "y": 281,
+      "comment": "sayap ekspansi "
+    },
+    {
+      "n": 8,
+      "x": 320,
+      "y": 221,
+      "comment": "menara"
+    },
+    {
+      "n": 9,
+      "x": 1294,
+      "y": 384,
+      "comment": "kubah marwa "
+    },
+    {
+      "n": 10,
+      "x": 1384,
+      "y": 857,
+      "comment": "kubah safa"
+    }
+  ],
+  "shapes": [
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 911,
+      "y0": 673,
+      "x1": 354,
+      "y1": 467
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 887,
+      "y0": 502,
+      "x1": 504,
+      "y1": 206
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1041,
+      "y0": 425,
+      "x1": 892,
+      "y1": 44
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1159,
+      "y0": 450,
+      "x1": 1178,
+      "y1": 20
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1174,
+      "y0": 22,
+      "x1": 994,
+      "y1": 22
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 994,
+      "y0": 22,
+      "x1": 885,
+      "y1": 48
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 885,
+      "y0": 48,
+      "x1": 682,
+      "y1": 101
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 682,
+      "y0": 101,
+      "x1": 506,
+      "y1": 210
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 506,
+      "y0": 210,
+      "x1": 397,
+      "y1": 285
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 395,
+      "y0": 283,
+      "x1": 271,
+      "y1": 429
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 348,
+      "y0": 463,
+      "x1": 262,
+      "y1": 422
+    },
+    {
+      "type": "ellipse",
+      "color": "#ef4444",
+      "x0": 164,
+      "y0": 78,
+      "x1": 474,
+      "y1": 570
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 930,
+      "y0": 737,
+      "x1": 823,
+      "y1": 788
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 823,
+      "y0": 788,
+      "x1": 804,
+      "y1": 865
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 802,
+      "y0": 865,
+      "x1": 887,
+      "y1": 998
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 887,
+      "y0": 998,
+      "x1": 969,
+      "y1": 1020
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 969,
+      "y0": 1020,
+      "x1": 1084,
+      "y1": 958
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1084,
+      "y0": 958,
+      "x1": 1146,
+      "y1": 983
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1146,
+      "y0": 983,
+      "x1": 1330,
+      "y1": 885
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1330,
+      "y0": 891,
+      "x1": 1382,
+      "y1": 908
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1382,
+      "y0": 908,
+      "x1": 1412,
+      "y1": 861
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1412,
+      "y0": 861,
+      "x1": 1414,
+      "y1": 846
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1414,
+      "y0": 846,
+      "x1": 1332,
+      "y1": 437
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1343,
+      "y0": 831,
+      "x1": 1268,
+      "y1": 425
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 930,
+      "y0": 739,
+      "x1": 932,
+      "y1": 671
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 932,
+      "y0": 671,
+      "x1": 973,
+      "y1": 613
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 973,
+      "y0": 613,
+      "x1": 1080,
+      "y1": 555
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1080,
+      "y0": 555,
+      "x1": 1170,
+      "y1": 549
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1170,
+      "y0": 549,
+      "x1": 1247,
+      "y1": 570
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1247,
+      "y0": 570,
+      "x1": 1255,
+      "y1": 609
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1255,
+      "y0": 609,
+      "x1": 1298,
+      "y1": 583
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 817,
+      "y0": 624,
+      "x1": 892,
+      "y1": 510
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 892,
+      "y0": 510,
+      "x1": 1052,
+      "y1": 433
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1052,
+      "y0": 431,
+      "x1": 1170,
+      "y1": 435
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 669,
+      "y0": 570,
+      "x1": 797,
+      "y1": 420
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 797,
+      "y0": 420,
+      "x1": 999,
+      "y1": 326
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 999,
+      "y0": 326,
+      "x1": 1174,
+      "y1": 313
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 508,
+      "y0": 519,
+      "x1": 652,
+      "y1": 356
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 656,
+      "y0": 347,
+      "x1": 964,
+      "y1": 225
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 964,
+      "y0": 225,
+      "x1": 1187,
+      "y1": 202
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1014,
+      "y0": 726,
+      "x1": 1028,
+      "y1": 690
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1028,
+      "y0": 690,
+      "x1": 1136,
+      "y1": 632
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1136,
+      "y0": 632,
+      "x1": 1161,
+      "y1": 630
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1161,
+      "y0": 630,
+      "x1": 1238,
+      "y1": 649
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1238,
+      "y0": 649,
+      "x1": 1270,
+      "y1": 690
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1270,
+      "y0": 690,
+      "x1": 1294,
+      "y1": 814
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1292,
+      "y0": 808,
+      "x1": 1270,
+      "y1": 872
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1270,
+      "y0": 872,
+      "x1": 1180,
+      "y1": 917
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1180,
+      "y0": 917,
+      "x1": 1084,
+      "y1": 887
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1084,
+      "y0": 887,
+      "x1": 1003,
+      "y1": 771
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 1003,
+      "y0": 771,
+      "x1": 1011,
+      "y1": 726
+    }
+  ],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    1920,
+    1080
+  ],
+  "annotated_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\_clarify\\masjidalharam_010019__annotated.png",
+  "timestamp": "2026-06-27T10:51:55"
+}

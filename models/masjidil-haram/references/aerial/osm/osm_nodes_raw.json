@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "source": "Overpass API (overpass-api.de), query 2026-06-22",
+    "query_center": "21.42250, 39.82611 (Kaaba centre)",
+    "radius_m": 700,
+    "attribution": "Map data © OpenStreetMap contributors (ODbL)"
+  },
+
+  "mosque_boundary": {
+    "way_id": 11321727,
+    "name": "Al-Masjid Al-Haram",
+    "boundary_anchors": {
+      "north": { "lat": 21.4286800, "lon": 39.8258289 },
+      "south": { "lat": 21.4207548, "lon": 39.8202194 },
+      "east_lon": 39.8277915,
+      "west_lon": 39.8202194
+    },
+    "note": "Full polygon (40+ nodes) from way 11321727. Fetch with: GET https://overpass-api.de/api/interpreter?data=[out:json];way(11321727);out geom;"
+  },
+
+  "safa_marwa": {
+    "safa": {
+      "name": "As Safa",
+      "lat": 21.4217996,
+      "lon": 39.8274307
+    },
+    "marwa": {
+      "name": "Al Marwa",
+      "lat": 21.4251754,
+      "lon": 39.8271276
+    },
+    "masa_way_id": 584203412,
+    "masa_way_name": "Sa'i / Al Masa'a Safa - Marwa",
+    "masa_north_point": { "lat": 21.4252985, "lon": 39.8275824 },
+    "masa_south_point": { "lat": 21.4217456, "lon": 39.8274484 }
+  },
+
+  "gates": [
+    { "node_id": 4755914231, "name": "King Abdul Aziz Gate 1", "ref": "1",  "lat": 21.4210447, "lon": 39.8258406 },
+    { "node_id": 3210622327, "name": "King Fahd Gate 79",      "ref": "79", "lat": 21.4212320, "lon": 39.8240461 },
+    { "node_id": 4318154227, "name": "Al-Fath Gate 30",        "ref": "30", "lat": 21.4240151, "lon": 39.8265147 },
+    { "node_id": 4562391840, "name": "Bab Al-Marwah 25",       "ref": "25", "lat": 21.4253183, "lon": 39.8273872 },
+    { "node_id": 1199442714, "name": "Quraish Gate 28",        "ref": "28", "lat": 21.4254428, "lon": 39.8269231 }
+  ],
+
+  "toilets_wudhu": [
+    { "name": "WC 6 (Men)",   "gender": "male",   "fee": false, "lat": 21.4204210, "lon": 39.8230671 },
+    { "name": "WC 7 (Women)", "gender": "female", "fee": false, "lat": 21.4196651, "lon": 39.8227961 },
+    { "name": "WC 13 (Men)",  "gender": "male",   "fee": false, "lat": 21.4261655, "lon": 39.8250195 },
+    { "name": "WC 14 (Women)","gender": "female", "fee": false, "lat": 21.4263210, "lon": 39.8261373 }
+  ],
+
+  "minarets": [
+    { "lat": 21.4211291, "lon": 39.8241897, "height_m": 139.0 },
+    { "lat": 21.4210716, "lon": 39.8260306, "height_m": 139.0 },
+    { "lat": 21.4211369, "lon": 39.8256866, "height_m": 139.0 },
+    { "lat": 21.4239776, "lon": 39.8263238, "height_m": 139.0 },
+    { "lat": 21.4239128, "lon": 39.8266542, "height_m": 139.0 },
+    { "lat": 21.4216066, "lon": 39.8272499, "height_m": 139.0 },
+    { "lat": 21.4229664, "lon": 39.8246794, "height_m": 139.0 },
+    { "lat": 21.4226539, "lon": 39.8246073, "height_m": 139.0 }
+  ]
+}

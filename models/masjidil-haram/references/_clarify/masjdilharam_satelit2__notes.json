@@ -1,0 +1,223 @@
+{
+  "source_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\masjdilharam_satelit2.png",
+  "question": "Gunakan alat anotasi ini untuk menandai detail yang ingin kamu klarifikasi atau tunjukkan pada gambar satelit Masjidil Haram. Gambar garis, tambahkan pin, atau beri komentar pada bagian yang perlu diperhatikan untuk pembangunan model 3D.",
+  "answer": "sesuaikan dengan gambar anotasi yang saya buat agar tidak ada garis yang menabrak pada octagonal ring \n",
+  "pins": [
+    {
+      "n": 1,
+      "x": 661,
+      "y": 397,
+      "comment": "perluasan ekspansi abdullah "
+    }
+  ],
+  "shapes": [
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 645,
+      "y0": 433,
+      "x1": 701,
+      "y1": 472
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 701,
+      "y0": 472,
+      "x1": 708,
+      "y1": 486
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 709,
+      "y0": 485,
+      "x1": 726,
+      "y1": 595
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 688,
+      "y0": 664,
+      "x1": 730,
+      "y1": 595
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 647,
+      "y0": 432,
+      "x1": 807,
+      "y1": 5
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 687,
+      "y0": 664,
+      "x1": 583,
+      "y1": 691
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 583,
+      "y0": 691,
+      "x1": 511,
+      "y1": 670
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 511,
+      "y0": 670,
+      "x1": 484,
+      "y1": 658
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 482,
+      "y0": 654,
+      "x1": 477,
+      "y1": 620
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 477,
+      "y0": 618,
+      "x1": 520,
+      "y1": 494
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 520,
+      "y0": 494,
+      "x1": 560,
+      "y1": 443
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 560,
+      "y0": 443,
+      "x1": 596,
+      "y1": 434
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 596,
+      "y0": 434,
+      "x1": 645,
+      "y1": 433
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 689,
+      "y0": 688,
+      "x1": 544,
+      "y1": 723
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 544,
+      "y0": 723,
+      "x1": 499,
+      "y1": 697
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 499,
+      "y0": 697,
+      "x1": 419,
+      "y1": 718
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 414,
+      "y0": 719,
+      "x1": 374,
+      "y1": 695
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 374,
+      "y0": 695,
+      "x1": 340,
+      "y1": 574
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 341,
+      "y0": 573,
+      "x1": 371,
+      "y1": 530
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 371,
+      "y0": 530,
+      "x1": 443,
+      "y1": 512
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 439,
+      "y0": 511,
+      "x1": 465,
+      "y1": 472
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 465,
+      "y0": 472,
+      "x1": 85,
+      "y1": 178
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 85,
+      "y0": 178,
+      "x1": 109,
+      "y1": 147
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 109,
+      "y0": 147,
+      "x1": 62,
+      "y1": 90
+    },
+    {
+      "type": "line",
+      "color": "#ef4444",
+      "x0": 62,
+      "y0": 83,
+      "x1": 109,
+      "y1": 26
+    }
+  ],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    1138,
+    754
+  ],
+  "annotated_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\_clarify\\masjdilharam_satelit2__annotated.png",
+  "timestamp": "2026-06-27T21:49:04"
+}

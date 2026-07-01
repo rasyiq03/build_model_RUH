@@ -1,0 +1,28 @@
+{
+  "source_image": "c:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\masjidilharam010036.png",
+  "question": "Tandai area Mataf (platform tawaf putih di sekitar Ka'bah): (1) batas dalam Mataf — tepian terdekat Ka'bah, (2) batas luar Mataf — tepi terluar platform putih sebelum dinding/arcade, (3) apakah ada ring/cincin kedua di lantai atas (upper deck) yang terlihat? Beri tanda pin di setiap sudut/batas tersebut.",
+  "answer": "perkecil dinding ringnya ",
+  "pins": [
+    {
+      "n": 1,
+      "x": 348,
+      "y": 335,
+      "comment": "mataf dalam "
+    },
+    {
+      "n": 2,
+      "x": 368,
+      "y": 187,
+      "comment": "mataf luar "
+    }
+  ],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    799,
+    787
+  ],
+  "annotated_image": "c:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\_clarify\\masjidilharam010036__annotated.png",
+  "timestamp": "2026-06-24T22:26:12"
+}

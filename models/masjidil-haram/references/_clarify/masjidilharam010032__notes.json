@@ -1,0 +1,34 @@
+{
+  "source_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\masjidilharam010032.png",
+  "question": "Untuk kalibrasi skala: (1) Beri PIN di tepat PUSAT Ka'bah, (2) PIN di tembok arcade dalam TEPAT DI UTARA Ka'bah (inner arcade wall, wajah bangunan paling dalam), (3) PIN di tembok luar bangunan TEPAT DI UTARA Ka'bah (outer wall). Ini dipakai untuk menghitung jarak dalam meter.",
+  "answer": "",
+  "pins": [
+    {
+      "n": 1,
+      "x": 951,
+      "y": 985,
+      "comment": "ka'bah"
+    },
+    {
+      "n": 2,
+      "x": 995,
+      "y": 579,
+      "comment": "bagian dalam kabah"
+    },
+    {
+      "n": 3,
+      "x": 1065,
+      "y": 1,
+      "comment": "bagian luar kabah"
+    }
+  ],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    2122,
+    2016
+  ],
+  "annotated_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\_clarify\\masjidilharam010032__annotated.png",
+  "timestamp": "2026-06-23T05:01:29"
+}

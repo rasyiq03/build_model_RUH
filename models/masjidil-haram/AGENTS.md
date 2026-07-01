@@ -33,7 +33,26 @@
 # 4. The Abraj Al-Bait clock tower is a SEPARATE model (models/makkah-tower/) —
 #    here it is at most low-poly background.
 # (Record resolved contradictions below, each citing its _clarify/*__notes.json.)
-#   - none yet
+#   - 2026-06-23: STRUCTURE LEVELS=4 (4 lantai utama) — user annotated masjidilharam010032
+#     dan menyatakan "4 lantai utama". FLOOR_H=6m (bukan 12m). OUTER_R=110m (dari polygon
+#     anotasi). Ref: references/_clarify/masjidilharam010032__notes.json
+#   - 2026-06-25: ORIENTASI PINTU & MAQAM IBRAHIM (FINAL) — Koordinat: +X=timur, +Y=utara.
+#     Pintu Ka'bah di muka +X (TIMUR), menghadap Maqam Ibrahim (timur). Offset +1.5 m ke
+#     +Y (utara) → sudut NE. Dunia nyata: pintu NE → disederhanakan ke +X dalam model.
+#     Hijr Ismail di sisi +Y (utara), busur 0°–180°, berpusat di (0, 6.4).
+#     Hajar Aswad di sudut NE (+hx, +hy), menghadap NE.
+#     Maqam Ibrahim di timur Ka'bah: pos (12.0, 1.5), ~12 m dari origin, di luar Hijr arc.
+#     Ref: references/_clarify/masjidalharam010014__notes.json
+#   - 2026-06-25: MAS'A — DUA CONNECTOR (UTARA + SELATAN), TIDAK TEGAK LURUS RING
+#     Anotasi 010048+010019 mengkonfirmasi: ada 2 connector — satu di selatan (dekat Safa,
+#     y≈-65 s/d -85, 5-point pentagon) dan satu di utara (sisi E ring (84,97)→(129,2),
+#     y≈50 s/d 97, 4-point quadrilateral). Keduanya mengikuti SUDUT SISI RING, bukan
+#     tegak lurus (90°) terhadap garis singgung. Crossover ring & Mas'a west wall di y≈50.
+#     Ref: references/_clarify/masjidalharam_010019__notes.json
+#         references/_clarify/masjidilharam010048__notes.json
+#   - 2026-06-25: MAS'A TINGGI — 3 lantai × 8 m = 24 m = ring 4 lantai × 6 m
+#     Roof slab di z=24 m. Dome pavilion duduk di atas roof slab (z=24.3 m).
+#     LEVELS=3, FLOOR_H=8.0 (bukan 4 lantai, bukan FLOOR_H=6).
 
 ---
 
@@ -184,8 +203,9 @@ Kaaba & details → columns/arches → minarets → gates → landmarks → furn
 | comp_haram_structure.py   | multi-level annular slabs + perimeter walls (split into ≤cap meshes) | 18000/mesh | STRUCTURE | walkable levels; each mesh watertight; COL slabs |
 | comp_mataf.py             | marble Mataf ring per level + parapets             | 12000   | MATAF        | levels match refs; flat & walkable; COL disc |
 | comp_masaa.py             | Mas'a corridor floors per level + Safa/Marwa ends + green-zone | 14000 | MASAA | ~450 m length, multi-level; walkable; COL slabs |
-| comp_kaaba.py             | Kaaba cube + kiswah + door + Black Stone + Hijr Ismail + Mizab | 4000 | KAABA | cube ~11×13×13.1 m; NOT walk-through (hull COL) |
-| comp_maqam_ibrahim.py     | Maqam Ibrahim canopy                               | 1500    | KAABA        | placed near Kaaba per refs |
+| comp_kaaba.py             | Kaaba cube + kiswah + door + Hajar Aswad + shadharwan + roof frame | 4000 | KAABA | cube ~11×13×13.1 m; door -Y (selatan); NOT walk-through (hull COL) |
+| comp_hijr_ismail.py       | Hijr Ismail arc wall + gate frames (E/W) + lamp posts | 10000 | HIJR_ISMAIL | busur 0°–180° di sisi +Y; pusat busur (0, 6.4) |
+| comp_maqam_ibrahim.py     | Maqam Ibrahim canopy                               | 1500    | KAABA        | di selatan Ka'bah (≈ (1.5, -12) dari origin); glass+metal frame |
 | comp_columns.py           | master column + instanced grid (all levels)        | 200 (master) | COLUMNS  | count matches grid; instanced |
 | comp_arches.py            | master arch + instanced along colonnades           | 400 (master) | COLUMNS  | instanced; no n-gons |
 | comp_minarets.py          | minaret master + instances (count from refs)       | 12000/minaret | MINARETS | correct count & positions |
