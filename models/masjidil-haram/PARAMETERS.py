@@ -88,29 +88,41 @@ TRACE = {
     "MINARETS": [               # (x_m, y_m) — 13 menara total (Wikipedia/Arab News)
         # King Fahd expansion (1988-1993) — 7 menara + 2 Fahd gate = 9 pre-Abdullah
         # Pintu King Fahd / barat jauh — 2 menara mengapit gerbang
-        (-198.9, -151.6),      # King Fahd Gate SW
-        (-229.0, -128.0),      # King Fahd Gate NW
+        (-198.9, -151.6),      # 0: King Fahd Gate SW
+        (-229.0, -128.0),      # 1: King Fahd Gate NW
         # Pintu selatan / King Abdul Aziz — 2 menara
-        (  -8.2, -158.0),      # Abdul Aziz Gate E
-        ( -43.8, -150.7),      # Abdul Aziz Gate W
+        (  -8.2, -158.0),      # 2: Abdul Aziz Gate E
+        ( -43.8, -150.7),      # 3: Abdul Aziz Gate W
         # Sisi timur / tenggara — 1 menara
-        ( 118.1,  -98.8),      # SE (dekat Mas'a)
+        ( 118.1,  -98.8),      # 4: SE (dekat Mas'a)
         # Sudut SW ring utama — 1 menara
-        ( -72.0, -100.0),      # SW ring
+        ( -72.0, -100.0),      # 5: SW ring
         # Sisi barat (Bab As-Salam / Umrah) — 2 menara
-        (-148.2,   51.6),      # barat N
-        (-155.7,   17.0),      # barat S
+        (-148.2,   51.6),      # 6: barat N
+        (-155.7,   17.0),      # 7: barat S
         # Sudut NW ring utama — 1 menara
-        ( -57.0,  112.0),      # NW ring
+        ( -57.0,  112.0),      # 8: NW ring
         # Pintu utara (ring utama) — 2 menara
-        (  22.1,  163.4),      # utara E
-        (  56.4,  156.2),      # utara W
+        (  22.1,  163.4),      # 9: utara E
+        (  56.4,  156.2),      # 10: utara W
         # Bab Abdullah (ekspansi utara) — 2 menara mengapit outer edge section A (W) dan C (NE)
-        # POSISI: ref-clarify masjdiilharam_satelit3 pin1/pin2 (2026-06-28)
-        # Kalibrasi: Kaaba≈px(348,382), skala≈2.1 m/px, image 601×504.
-        (-585.0,  323.0),      # menara ke-12, outer edge W (section A) — pin1 px(69,228)
-        ( -10.0,  660.0),      # menara ke-13, outer edge NE (section C) — pin2 px(341,70)≈P9
+        (-21.0,   653.1),      # 11: menara Bab Abdullah NE (disinkronisasi dari satelit3/4)
+        (-585.9,  323.4),      # 12: menara Bab Abdullah W (disinkronisasi dari satelit3/4)
     ],
+    "MINARET_GATES": [
+        # Pasangan indeks menara (0-indexed) yang mengapit gerbang utama
+        (0, 1),   # King Fahd Gate
+        (2, 3),   # King Abdul Aziz Gate
+        (6, 7),   # Umrah Gate (Barat)
+        (9, 10),  # Al-Fath Gate (Utara)
+    ],
+    "GATE_MAIN": {
+        "TARGET_TRI": 8000,
+        "HEIGHT": 25.0,
+        "DEPTH": 8.0,
+        "MATERIAL_MAIN": "MARBLE",
+        "MATERIAL_ORNAMENT": "BEIGE",
+    },
 }
 
 # --- Material slot names ------------------------------------------------------
@@ -415,6 +427,22 @@ MASAA_CONNECTOR = {
     "MATERIAL":       "CONCRETE",
     "DOME_MATERIAL":  "DOME_ROOF",
 }
+FAHD_DOMES = {
+    "TARGET_TRI": 8000,
+    # 3 kubah besar di atap perluasan King Fahd (barat)
+    "POSITIONS": [
+        (-155.0, -105.0),  # Kiri
+        (-125.0, -105.0),  # Tengah
+        ( -95.0, -105.0),  # Kanan
+    ],
+    "DRUM_R":       7.0,
+    "DOME_R":       8.5,
+    "DOME_H":       9.0,
+    "DRUM_H":       5.0,
+    "N_SIDES":     16,
+    "Z_BASE":      24.0,   # Tinggi atap
+    "MATERIAL": "MARBLE",
+}
 
 ABDULLAH_EXPANSION = {
     "TARGET_TRI": 18000,
@@ -456,8 +484,8 @@ ABDULLAH_EXPANSION = {
     # Sumber: "two minarets, bringing total to 11" (2011 announce) + 2 King Salman = 13 total
     # POSISI perlu ref-clarify — estimasi dari P4 POLY_OUTER area (~NW corner -414,503)
     "MINARETS": [
-        {"cx": -585.0, "cy": 323.0},   # menara ke-12, outer W edge section A — ref-clarify satelit3 pin1 (2026-06-28)
-        {"cx":  -10.0, "cy": 660.0},   # menara ke-13, outer NE edge section C — ref-clarify satelit3 pin2 (2026-06-28)
+        {"cx": -575.0, "cy": 278.0},   # menara kiri (P1 W-far)
+        {"cx":   45.0, "cy": 595.0},   # menara kanan (P11 E-top)
     ],
     "MINARET_H":        135.0,    # CONFIRMED: SPA.gov.sa / Saudipedia — Bab Abdullah minarets = 135 m (bukan 89 m; 89 m = King Fahd Gate)
     "MINARET_R_BASE":     3.5,

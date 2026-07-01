@@ -1,0 +1,82 @@
+{
+  "source_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\masjidilharam_satelit4.png",
+  "question": "Tolong tandai kembali letak dasar 13 menara secara presisi pada gambar ini agar posisinya sesuai dengan model. Gunakan pin seperti sebelumnya.",
+  "answer": "ini adalah letak 11 menara pad amsjidil haram, untuk yang 2 nya akan kita buat nanti \n",
+  "pins": [
+    {
+      "n": 1,
+      "x": 249,
+      "y": 119,
+      "comment": ""
+    },
+    {
+      "n": 2,
+      "x": 290,
+      "y": 122,
+      "comment": ""
+    },
+    {
+      "n": 3,
+      "x": 82,
+      "y": 449,
+      "comment": ""
+    },
+    {
+      "n": 4,
+      "x": 103,
+      "y": 295,
+      "comment": ""
+    },
+    {
+      "n": 5,
+      "x": 131,
+      "y": 270,
+      "comment": ""
+    },
+    {
+      "n": 6,
+      "x": 384,
+      "y": 248,
+      "comment": ""
+    },
+    {
+      "n": 7,
+      "x": 416,
+      "y": 282,
+      "comment": ""
+    },
+    {
+      "n": 8,
+      "x": 328,
+      "y": 533,
+      "comment": ""
+    },
+    {
+      "n": 9,
+      "x": 365,
+      "y": 510,
+      "comment": ""
+    },
+    {
+      "n": 10,
+      "x": 849,
+      "y": 27,
+      "comment": ""
+    },
+    {
+      "n": 11,
+      "x": 864,
+      "y": 881,
+      "comment": ""
+    }
+  ],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    1263,
+    916
+  ],
+  "annotated_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\_clarify\\masjidilharam_satelit4__annotated.png",
+  "timestamp": "2026-06-29T20:32:21"
+}

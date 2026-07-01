@@ -9,6 +9,7 @@ sys.path += [HERE, os.path.join(HERE, "components"), ROOT]
 
 import PARAMETERS as P
 import ruh_common as C
+import texture_otomatis_masjidil_haram as TA
 
 # --- Aktif (file ada di disk) ---
 from components import comp_haram_structure
@@ -21,6 +22,9 @@ from components import comp_columns
 from components import comp_arches
 from components import comp_expansion_wings
 from components import comp_abdullah_expansion
+from components import comp_minarets
+from components import comp_gates
+from components import comp_fahd_domes
 
 # --- Nonaktif: file hilang dari sesi sebelumnya, perlu direkonstruksi ---
 # from components import comp_ground
@@ -29,8 +33,6 @@ from components import comp_abdullah_expansion
 # from components import comp_domes
 # from components import comp_masaa_connector
 # --- Nonaktif: ditunda per instruksi user ("menara dan gerbang belakangan") ---
-# from components import comp_minarets
-# from components import comp_gates
 
 REGISTRY = [
     ("haram_structure",    comp_haram_structure.build,    comp_haram_structure.COLLECTION,    comp_haram_structure.TRI_CAP),
@@ -48,8 +50,9 @@ REGISTRY = [
     # ("furniture",       ...) — nonaktif
     # ("domes",           ...) — nonaktif
     # ("masaa_connector", ...) — nonaktif
-    # ("minarets",        ...) — ditunda
-    # ("gates",           ...) — ditunda
+    ("minarets",           comp_minarets.build,           comp_minarets.COLLECTION,           comp_minarets.TRI_CAP),
+    ("gates",              comp_gates.build,              comp_gates.COLLECTION,              comp_gates.TRI_CAP),
+    ("fahd_domes",         comp_fahd_domes.build,         comp_fahd_domes.COLLECTION,         comp_fahd_domes.TRI_CAP),
 ]
 
 
@@ -77,6 +80,9 @@ def main():
     print(f"\n{C.TAG} OVERALL: {overall}")
     if overall == "FAIL":
         raise SystemExit(1)
+
+    print(f"\n{C.TAG} ===== APPLYING AUTO TEXTURES =====")
+    TA.apply_auto_textures()
 
     out_dir  = os.path.join(HERE, "exports")
     os.makedirs(out_dir, exist_ok=True)

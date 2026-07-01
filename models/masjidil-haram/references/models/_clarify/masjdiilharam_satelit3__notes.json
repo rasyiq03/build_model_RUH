@@ -1,0 +1,94 @@
+{
+  "source_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\masjdiilharam_satelit3.png",
+  "question": "Tolong tandai letak dasar menara secara presisi/spesifik pada gambar ini (terutama menara ekspansi yang dimaksud). Gunakan pin untuk menandai lokasi menara.",
+  "answer": "ini adalah tiitk menara berada, jadi pastikan posisinya sesuai dengan hasil anotasi tersbeut agar sesuai dengan dunia nyata \n",
+  "pins": [
+    {
+      "n": 1,
+      "x": 202,
+      "y": 383,
+      "comment": ""
+    },
+    {
+      "n": 2,
+      "x": 220,
+      "y": 407,
+      "comment": ""
+    },
+    {
+      "n": 3,
+      "x": 284,
+      "y": 404,
+      "comment": ""
+    },
+    {
+      "n": 4,
+      "x": 310,
+      "y": 413,
+      "comment": ""
+    },
+    {
+      "n": 5,
+      "x": 242,
+      "y": 328,
+      "comment": ""
+    },
+    {
+      "n": 6,
+      "x": 250,
+      "y": 309,
+      "comment": ""
+    },
+    {
+      "n": 7,
+      "x": 363,
+      "y": 383,
+      "comment": ""
+    },
+    {
+      "n": 8,
+      "x": 336,
+      "y": 256,
+      "comment": ""
+    },
+    {
+      "n": 9,
+      "x": 357,
+      "y": 263,
+      "comment": ""
+    },
+    {
+      "n": 10,
+      "x": 216,
+      "y": 199,
+      "comment": ""
+    },
+    {
+      "n": 11,
+      "x": 237,
+      "y": 190,
+      "comment": ""
+    },
+    {
+      "n": 12,
+      "x": 338,
+      "y": 71,
+      "comment": ""
+    },
+    {
+      "n": 13,
+      "x": 69,
+      "y": 228,
+      "comment": ""
+    }
+  ],
+  "shapes": [],
+  "reference_images": [],
+  "uploaded_references": [],
+  "image_size": [
+    601,
+    504
+  ],
+  "annotated_image": "C:\\Users\\Devi Maulani\\OneDrive - Politeknik Negeri Bandung\\FOLDER DEVI MAULANI\\SEMESTER 4\\GITHUB\\BUILD WORLD\\build_model_RUH\\build_model_RUH\\models\\masjidil-haram\\references\\models\\_clarify\\masjdiilharam_satelit3__annotated.png",
+  "timestamp": "2026-06-29T20:10:39"
+}
