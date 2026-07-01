@@ -126,7 +126,9 @@ TRACE = {
         {"over": "transition", "peak": (0.0,   60.0), "masts": 11, "basin": False},  # plaza, NO basin
         {"over": "aqaba",      "peak": (0.0,  178.0), "masts": 13, "basin": True},   # biggest
     ],
-    "CANOPY_PEAK_Z": 68.0, "CANOPY_RIM_Z": 56.0,   # membrane sits ABOVE jamrah tops (52) — no poke-through
+    # Flat gentle umbrella dome (real canopies are shallow discs): peak only ~7 m above
+    # the rim, both ABOVE jamrah tops (52) — no poke-through. (was 68: too peaked/pyramidal.)
+    "CANOPY_PEAK_Z": 63.0, "CANOPY_RIM_Z": 56.0,
 
     # --- Towers: 3 TYPES (~16). positions APPROX (from user photo annotation) ---
     # type: A_ESC_HELIPAD (oval, louver, helipad roof; ~11) | B_VENT_OBS (flared chimney + disc; 2)
